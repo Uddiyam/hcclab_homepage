@@ -6,7 +6,7 @@ export default function Header() {
   const linksObj = [
     {
       name: "Home",
-      link: "/",
+      link: "/Home",
     },
     {
       name: "Introduction",
@@ -18,7 +18,7 @@ export default function Header() {
     },
     {
       name: "Lectures",
-      link: "/",
+      link: "/Lectures",
     },
     {
       name: "Publications",
@@ -51,7 +51,7 @@ export default function Header() {
             return (
               <li
                 className={`${styles.headerLinkItem} ${
-                  i === 3 ? styles.headerCurrentLink : ""
+                  i === 0 ? styles.headerCurrentLink : ""
                 }`}
                 key={i}
               >
