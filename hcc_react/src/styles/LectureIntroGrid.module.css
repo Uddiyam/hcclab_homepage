@@ -1,0 +1,22 @@
+.lectureIntroGridWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lectureIntroGridTitle {
+  width: 100vw;
+  font-size: 1.75rem;
+  color: rgba(151, 79, 89, 1);
+  padding: 2.6rem calc((100% - 70rem) / 2) 1.8rem;
+  margin: 0 auto;
+  background-color: rgba(243, 243, 243, 1);
+}
+
+.lectureIntroGridTemplate {
+  display: grid;
+  grid-template-columns: repeat(2, 34rem);
+  gap: 6rem 2rem;
+  padding: 4rem 0;
+}

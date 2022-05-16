@@ -1,0 +1,25 @@
+.lectureIntro_TitleEng {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.lectureIntro_TitleKor {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.lectureIntro_YearSemester {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.lectureIntro_Summary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
