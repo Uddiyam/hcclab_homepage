@@ -1,36 +1,39 @@
-.TitleView {
-  height: 30%;
-  text-align: center;
-  padding-bottom: 4.5rem;
-  padding-top: 4.5rem;
-  background-image: url(https://lh6.googleusercontent.com/BMcE-t2latWMwQUmaabt__ajVv4eRs_GDPxA-4a6JrMUStQ5YOx0fsouoAGPK-yEsGtE9hRyjJLMNg0RDLT_n2Q=w16383);
-  background-size: cover;
-}
-
 .homeview {
   width: 100vw;
 }
 
-.line {
-  border-bottom: 0.8rem solid rgba(151, 79, 89, 1);
-  width: 55%;
-  margin: auto;
-}
-
-.line_s {
-  border-bottom: 0.1rem solid rgb(0, 0, 0);
-  width: 55%;
-  margin: auto;
-  margin-bottom: 1rem;
+.TitleView {
+  height: 20rem;
+  text-align: center;
+  background-image: url("../../public/image/home_back.jpg");
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main_text {
   color: white;
   font-weight: 900;
   font-size: 4.5rem;
-  width: 60%;
+  line-height: 125%;
+  text-align: center;
+  height: 15rem;
+  padding: 0 3rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: end;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+}
+
+.line {
+  border-bottom: 0.8rem solid rgba(151, 79, 89, 1);
+  max-width: 42rem;
   margin: auto;
-  line-height: 130%;
+}
+
+.Content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .intro_view {
@@ -39,12 +42,66 @@
   background-color: white;
 }
 
+.SubText {
+  width: 100vw;
+  font-size: 2rem;
+  color: black;
+  font-weight: 400;
+  max-width: 55rem;
+  margin: 2rem auto;
+  padding: 0 3rem;
+}
+
+.s_text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: black;
+  margin: auto;
+  margin-bottom: 2rem;
+  line-height: 160%;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+  max-width: 55rem;
+  padding: 0 3rem;
+  justify-content: start;
+  display: flex;
+  text-align: start;
+}
+
+.news_view {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(243, 243, 243, 1);
+}
+.center {
+  max-width: 55rem;
+  margin: 0 auto;
+  padding: 0 3rem;
+}
+
+.SubText1 {
+  width: 100vw;
+  font-size: 2rem;
+  color: black;
+  font-weight: 400;
+  max-width: 55rem;
+  margin: 2rem auto;
+}
+
+.oneview {
+  margin: auto;
+}
+
+.line_s {
+  border-bottom: 0.1rem solid rgb(0, 0, 0);
+  max-width: 55rem;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
 .row_view {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  width: 50%;
 }
 
 .icon_view {
@@ -55,12 +112,6 @@
 
 .icon_view:hover {
   background-color: #ededed;
-}
-
-.news_view {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(243, 243, 243, 1);
 }
 
 .collaborators_view {
@@ -74,15 +125,6 @@
   margin: auto;
 }
 
-.SubText {
-  width: 100vw;
-  font-size: 2rem;
-  color: black;
-  font-weight: 400;
-  padding: 2.6rem calc((100% - 65rem) / 2) 1.8rem;
-  margin: auto;
-}
-
 .yeartext {
   font-size: 1.5rem;
   color: rgba(151, 79, 89, 1);
@@ -90,29 +132,62 @@
   background-color: rgba(243, 243, 243, 1);
 }
 
-.s_text {
-  width: 55%;
-  font-size: 1rem;
-  font-weight: 300;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  margin: auto;
-  margin-bottom: 2rem;
-  line-height: 160%;
-}
-
-.Content {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.oneview {
-  width: 50%;
-  margin: auto;
-}
-
 .newstext {
   line-height: 200%;
   margin-left: 1rem;
   font-weight: 300;
+}
+
+@media screen and (max-width: 768px) {
+  .main_text {
+    color: white;
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 125%;
+    text-align: center;
+    height: 15rem;
+    padding: 0 3rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    align-items: end;
+    display: flex;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .line {
+    border-bottom: 0.8rem solid rgba(151, 79, 89, 1);
+    max-width: 30rem;
+    margin: auto;
+  }
+
+  .news_view {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(243, 243, 243, 1);
+  }
+  .center {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+
+  .SubText1 {
+    width: 100vw;
+    font-size: 2rem;
+    color: black;
+    font-weight: 400;
+    max-width: 40rem;
+  }
+
+  .oneview {
+    margin: 0 auto;
+  }
+
+  .newstext {
+    line-height: 150%;
+    margin-left: 0.5rem;
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-family: "Open Sans", sans-serif;
+  }
 }

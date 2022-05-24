@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Header.module.css";
 import { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function Header() {
   const linksObj = [
@@ -32,11 +33,19 @@ export default function Header() {
     window.scrollY ? setIsScroll(true) : setIsScroll(false);
   });
 
+  const [isOpen, setMenu] = useState(false);
+  const toggleMenu = () => {
+    setMenu((isOpen) => !isOpen);
+  };
+
   return (
     <div
       className={`${styles.headerWrapper} ${isScroll ? styles.isScrolled : ""}`}
     >
       <div className={styles.headerLeft}>
+        <div className={styles.hamburger_view} onClick={() => toggleMenu()}>
+          <GiHamburgerMenu style={{ width: 20, height: 20 }} />
+        </div>
         <img
           width="142"
           className={styles.headerLogo}
@@ -47,18 +56,20 @@ export default function Header() {
       </div>
       <div className={styles.headerRight}>
         <ul className={styles.headerLinkList}>
-          {links.map((l, i) => {
-            return (
-              <li
-                className={`${styles.headerLinkItem} ${
-                  i === 0 ? styles.headerCurrentLink : ""
-                }`}
-                key={i}
-              >
-                <a href={l.link}>{l.name}</a>
-              </li>
-            );
-          })}
+          <div className={styles.hiddenview}>
+            {links.map((l, i) => {
+              return (
+                <li
+                  className={`${styles.headerLinkItem} ${
+                    i === 0 ? styles.headerCurrentLink : ""
+                  }`}
+                  key={i}
+                >
+                  <a href={l.link}>{l.name}</a>
+                </li>
+              );
+            })}
+          </div>
           <li className={styles.headerSearchIcon}>
             <img
               width="21"

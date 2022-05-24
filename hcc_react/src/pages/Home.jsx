@@ -176,7 +176,7 @@ export default function Home() {
   };
 
   return (
-    <div className ={styles.homeview}>
+    <div className={styles.homeview}>
       <Header />
       <div className={styles.TitleView}>
         <div className={styles.main_text}>
@@ -206,50 +206,52 @@ export default function Home() {
           </div>
 
           <div className={styles.s_text}>
-            HCC 연구실은 인간, 사용자의 관점에서 인터랙티브 시스템을 설계하고
-            개발하는 HCI 연구를 수행합니다. 주요 연구 관심사는 다음과 같습니다.
-            <br />
-            1) 고객 경험 개선을 위한 UX/CX 리서치, 2) 데이터로부터 통찰을 얻는
-            인간 중심 인공지능, 3) MVP 검증을 위한 소프트웨어 서비스 개발
-            (모바일과웹 Full stack 기술). 더 자세한 소개를 원하면 Introduction
-            페이지를 참고 바랍니다.
+            인간중심컴퓨팅연구실 (HCC Lab)은 인간, 사용자의 관점에서 인터랙티브
+            시스템을 설계하고 개발하는 HCI 연구를 수행합니다. 주요 연구 관심사는
+            다음과 같습니다.
+            <br /> 1) 고객 경험 개선을 위한 UX/CX 리서치, 2) 데이터로부터 통찰을
+            얻는 인간 중심 인공지능, 3) 프로토타입 개발 및 검증 (모바일과 웹
+            Full stack)
           </div>
 
           <div className={styles.s_text}>
-            HCI, UX, 인공지능응용 관련 연구생(학부/학석연계/석사)에 관심이
-            있다면 모집 안내문을 참고하세요
+            더 자세한 소개를 원하면 Introduction 페이지를 참고 바랍니다. HCI,
+            UX, 인공지능응용 관련 연구생(학부/학석연계/석사)에 관심이 있다면
+            모집 안내문을 참고하세요
           </div>
         </div>
 
         <div className={styles.news_view}>
-          <div className={styles.SubText}>NEWS</div>
-          <div className={styles.row_view}>
-            <div className={styles.yeartext}>2022</div>
-          </div>
-          <NewsListMap list={news_list_2022} />
-          <div className={styles.row_view} style={{ marginTop: "2rem" }}>
-            <div className={styles.yeartext}> ~ 2021</div>
-            <div className={styles.icon_view}>
-              {!show && (
-                <FaAngleDown
-                  style={{ width: 30, height: 30 }}
-                  onClick={icon_click_check1}
-                />
-              )}
-              {show && (
-                <FaAngleUp
-                  style={{ width: 30, height: 30 }}
-                  onClick={icon_click_check2}
-                />
-              )}
+          <div className={styles.center}>
+            <div className={styles.SubText1}>NEWS</div>
+            <div className={styles.row_view}>
+              <div className={styles.yeartext}>2022</div>
             </div>
-          </div>
-          <div className={styles.line_s}></div>
-          {show && (
-            <div style={{ marginBottom: "2rem" }}>
-              <NewsListMap list={news_list_2021} />
+            <NewsListMap list={news_list_2022} />
+            <div className={styles.row_view} style={{ marginTop: "2rem" }}>
+              <div className={styles.yeartext}> ~ 2021</div>
+              <div className={styles.icon_view}>
+                {!show && (
+                  <FaAngleDown
+                    style={{ width: 30, height: 30 }}
+                    onClick={icon_click_check1}
+                  />
+                )}
+                {show && (
+                  <FaAngleUp
+                    style={{ width: 30, height: 30 }}
+                    onClick={icon_click_check2}
+                  />
+                )}
+              </div>
             </div>
-          )}
+            <div className={styles.line_s}></div>
+            {show && (
+              <div style={{ marginBottom: "2rem" }}>
+                <NewsListMap list={news_list_2021} />
+              </div>
+            )}
+          </div>
         </div>
 
         <div className={styles.collaborators_view}>
