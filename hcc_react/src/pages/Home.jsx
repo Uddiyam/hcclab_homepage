@@ -257,36 +257,40 @@ export default function Home() {
         </div>
 
         <div className={styles.news_view}>
-          <div className={styles.center}>
-            <div className={styles.SubText1}>NEWS</div>
-            <div className={styles.row_view}>
-              <div className={styles.yeartext}>2022</div>
-            </div>
+          <div className={styles.SubText}>NEWS</div>
+          <div className={styles.yeartext}>2022</div>
+
+          <div className={styles.list_view}>
             <NewsListMap list={news_list_2022} />
-            <div className={styles.row_view} style={{ marginTop: "2rem" }}>
-              <div className={styles.yeartext}> ~ 2021</div>
-              <div className={styles.icon_view}>
-                {!show && (
-                  <FaAngleDown
-                    style={{ width: 30, height: 30 }}
-                    onClick={icon_click_check1}
-                  />
-                )}
-                {show && (
-                  <FaAngleUp
-                    style={{ width: 30, height: 30 }}
-                    onClick={icon_click_check2}
-                  />
-                )}
-              </div>
+          </div>
+
+          <div className={styles.row_view}>
+            <div className={styles.yeartext1}> ~ 2021</div>
+            <div className={styles.icon_view}>
+              {!show && (
+                <FaAngleDown
+                  style={{ width: 30, height: 30 }}
+                  onClick={icon_click_check1}
+                />
+              )}
+              {show && (
+                <FaAngleUp
+                  style={{ width: 30, height: 30 }}
+                  onClick={icon_click_check2}
+                />
+              )}
             </div>
-            <div className={styles.line_s}></div>
-            {show && (
+          </div>
+
+          <div className={styles.line_s}></div>
+
+          {show && (
+            <div className={styles.list_view}>
               <div style={{ marginBottom: "2rem" }}>
                 <NewsListMap list={news_list_2021} />
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
 
         <div className={styles.collaborators_view}>
