@@ -46,6 +46,7 @@ export default function Header() {
       <div className={styles.headerLeft}>
         <div className={styles.hamburger_view} onClick={() => toggleMenu()}>
           <GiHamburgerMenu style={{ width: 20, height: 20 }} />
+          <span className={styles.tooltip}>사이드바 표시</span>
         </div>
         <img
           width="142"
@@ -77,6 +78,7 @@ export default function Header() {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZ2lrGUOryxor3UWjEUjRs2aKB2eqkr_9ykMs_B4VwDBh4fVCYwYx-vYXLfRZe03UpPAU&usqp=CAU"
               alt="돋보기 아이콘"
             />
+            <span className={styles.tooltip2}>검색창 열기</span>
           </li>
         </ul>
       </div>
@@ -85,6 +87,7 @@ export default function Header() {
           <div className={styles.menuview}>
             <div className={styles.backview} onClick={() => toggleMenu()}>
               <AiOutlineClose style={{ width: 30, height: 30 }} />
+              <span className={styles.tooltip1}>사이드바 닫기</span>
             </div>
             <div className={styles.menuview_mobile}>
               {links.map((l, i) => {

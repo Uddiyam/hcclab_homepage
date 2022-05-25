@@ -164,9 +164,28 @@
   margin: auto;
 }
 
+.tooltip {
+  display: none;
+  position: absolute;
+  margin-top: 4rem;
+  max-width: 200px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8em;
+  color: white;
+  background-color: #292a2d;
+  opacity: 0.8;
+}
+
+.icon_view:hover .tooltip {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
   .TitleView {
-    height: 15rem;
+    padding-top: 3rem;
+    height: 23rem;
     text-align: center;
     background-image: url("../../public/image/home_back.jpg");
     background-size: cover;
@@ -177,9 +196,9 @@
     color: white;
     font-weight: 900;
     font-size: 3rem;
-    line-height: 105%;
+    line-height: 115%;
     text-align: center;
-    height: 10rem;
+    height: 13rem;
     padding: 1rem 2.5rem;
     justify-content: center;
     align-items: end;
@@ -189,7 +208,7 @@
 
   .line {
     border-bottom: 0.8rem solid rgba(151, 79, 89, 1);
-    max-width: 30rem;
+    max-width: 25rem;
     margin: auto;
   }
 

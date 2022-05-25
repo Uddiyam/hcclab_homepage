@@ -18,7 +18,7 @@ export default function Home() {
       year: "2022.05.20",
       group: "Paper",
       context:
-        "Our paper was accepted at Human-centric Computing and Information Sciences (SCIE Q1 IF=5.9)",
+        "Our paper was accepted at <a href='http://hcisj.com/' target='_blank'>Human-centric Computing and Information Sciences</a> (SCIE Q1 IF=5.9)",
     },
     {
       year: "2022.04.28",
@@ -71,56 +71,58 @@ export default function Home() {
       year: "2021.10.30",
       group: "Seminar",
       context:
-        "10월의하늘에 참여하여 초/중등 학생을 대상으로 HCI와 실감형 기술에 대해 강연하였습니다. ",
+        "<a href='https://www.google.com/url?q=https%3A%2F%2Fwww.octobersky.org%2F&sa=D&sntz=1&usg=AOvVaw0GH0stsJBjXHG3hJmIvk4P' target='_blank'>10월의하늘</a>에 참여하여 초/중등 학생을 대상으로 <b>HCI와 실감형 기술</b>에 대해 강연하였습니다. ",
     },
     {
       year: "2021.10.14",
       group: "Seminar",
       context:
-        "이화여대 교육공학과 박사과정콜로키움에서 '추천시스템과 알고리즘의 편향성'을 주제로 강연하였습니다.",
+        "이화여대 교육공학과 박사과정콜로키움에서 '<b>추천시스템과 알고리즘의 편향성</b>'을 주제로 강연하였습니다.",
     },
     {
       year: "2021.10.07",
       group: "Paper",
       context:
-        "'재활 환자의 동기부여를 위한 ICT 기술의 가능성과 미래' 가 IE매거진에 특집 원고로 실렸습니다.  ",
+        "'<b>재활 환자의 동기부여를 위한 ICT 기술의 가능성과 미래</b>' 가 <a href='https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE10612960&mark=0&useDate=&ipRange=N&accessgl=Y&language=ko_KR&hasTopBanner=true' target='_blank'>IE매거진</a>에 특집 원고로 실렸습니다.  ",
     },
     {
       year: "2021.09.27",
       group: "Seminar",
       context:
-        "노원구청 특별강좌에서 '비대면시대의 실감형 콘텐츠 기술'을 주제로 강연하였습니다. ",
+        "노원구청 특별강좌에서 '<b>비대면시대의 실감형 콘텐츠 기술</b>'을 주제로 강연하였습니다. ",
     },
 
     {
       year: "2021.09.09",
       group: "Paper",
       context:
-        "Our paper was accepted at International Journal of Industrial Ergonomics (SSCI)",
+        "Our paper was accepted at <a href='http://hcisj.com/' target='_blank'>International Journal of Industrial Ergonomics</a> (SSCI)",
     },
     {
       year: "2021.07.26",
       group: "Seminar",
       context:
-        "삼성SDS 디자인씽킹 연구회에서 'Growth Hacking' 을 주제로 발표하였습니다.",
+        "삼성SDS 디자인씽킹 연구회에서 '<b>Growth Hacking</b>' 을 주제로 발표하였습니다.",
     },
 
     {
       year: "2021.07.07",
       group: "Seminar",
-      context: "Summer HCI Intensive seminar (집중세미나) was held.",
+      context:
+        "Summer  <a href='./' >HCI Intensive seminar (집중세미나)</a> was held.",
     },
     {
       year: "2021.07.03",
       group: "Paper",
-      context: "Our paper was accepted at JMIR mHealth and uHealth (SCIE)",
+      context:
+        "Our paper was accepted at  <a href='https://mhealth.jmir.org/' target='_blank'>JMIR mHealth and uHealth</a> (SCIE)",
     },
 
     {
       year: "2021.06.18",
       group: "Conference",
       context:
-        " 대한인간공학회 2021 춘계학술대회에서 연구 내용을 발표하였습니다. ",
+        "  <a href='https://www.esk.or.kr/' target='_blank'>대한인간공학회 2021 춘계학술대회</a>에서 연구 내용을 발표하였습니다. ",
     },
     {
       year: "2021.06.17",
@@ -137,7 +139,8 @@ export default function Home() {
     {
       year: "2021.03.29",
       group: "Paper",
-      context: "Our paper was accepted at The Asia-Pacific Education ",
+      context:
+        "Our paper was accepted at  <a href='https://www.springer.com/journal/40299?gclid=Cj0KCQjw0oCDBhCPARIsAII3C_HqwQa45XHYI3cMD_PDeZ7qnJ4jOM5gGqb9_q3lTO92-BfKgS_8cS4aAkAzEALw_wcB' target='_blank'>The Asia-Pacific Education Researcher</a> (SSCI) ",
     },
     {
       year: "2021.03.17",
@@ -155,13 +158,14 @@ export default function Home() {
       year: "2021.02.03",
       group: "Paper",
       context:
-        "Our paper was accepted at International Journal of Human-Computer Interaction (SSCI) ",
+        "Our paper was accepted at <a href='https://www.tandfonline.com/toc/hihc20/current' target='_blank'>International Journal of Human-Computer Interaction</a> (SSCI) ",
     },
 
     {
       year: "2021.01.27",
       group: "Conference",
-      context: "HCI Korea 2021 학술대회에서 학술위원으로 활동하였습니다. ",
+      context:
+        "<a href='https://conference.hcikorea.org/hcik2021/main/main.asp' target='_blank'>HCI Korea 2021 학술대회</a>에서 학술위원으로 활동하였습니다. ",
     },
     {
       year: "2021.01.06",
@@ -172,7 +176,7 @@ export default function Home() {
       year: "2020.10.30",
       group: "Conference",
       context:
-        " 대한인간공학회 추계학술대회의 신진연구자콜로키움에서 연구 내용을 발표하였습니다.",
+        "<a href='https://www.esk.or.kr/' target='_blank'>대한인간공학회 추계학술대회</a>의 신진연구자콜로키움에서 연구 내용을 발표하였습니다.",
     },
   ];
 
@@ -268,16 +272,22 @@ export default function Home() {
             <div className={styles.yeartext1}> ~ 2021</div>
             <div className={styles.icon_view}>
               {!show && (
-                <FaAngleDown
-                  style={{ width: 30, height: 30 }}
-                  onClick={icon_click_check1}
-                />
+                <>
+                  <FaAngleDown
+                    style={{ width: 30, height: 30 }}
+                    onClick={icon_click_check1}
+                  />
+                  <span className={styles.tooltip}>펼치기</span>
+                </>
               )}
               {show && (
-                <FaAngleUp
-                  style={{ width: 30, height: 30 }}
-                  onClick={icon_click_check2}
-                />
+                <>
+                  <FaAngleUp
+                    style={{ width: 30, height: 30 }}
+                    onClick={icon_click_check2}
+                  />
+                  <span className={styles.tooltip}>접기</span>
+                </>
               )}
             </div>
           </div>

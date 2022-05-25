@@ -63,12 +63,29 @@
   cursor: pointer;
 }
 
+.headerSearchIcon:hover .tooltip2 {
+  display: block;
+}
+
 .hiddenview {
   display: flex;
 }
 
 .hamburger_view {
   display: none;
+}
+
+.tooltip2 {
+  display: none;
+  position: absolute;
+  max-width: 200px;
+  right: 2rem;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8em;
+  color: white;
+  background-color: #5f5e5c;
 }
 
 @media screen and (max-width: 768px) {
@@ -83,6 +100,31 @@
     background-color: white;
   }
 
+  .tooltip {
+    display: none;
+    position: absolute;
+    margin-top: 2rem;
+    max-width: 200px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+    color: white;
+    background-color: #292a2d;
+  }
+
+  .tooltip1 {
+    display: none;
+    position: absolute;
+    max-width: 200px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.8em;
+    color: white;
+    background-color: #292a2d;
+  }
+
   .isScrolled {
     border-bottom: 1px solid #c4c4c4;
   }
@@ -90,6 +132,10 @@
   .hamburger_view {
     display: flex;
     margin-right: 1rem;
+  }
+
+  .hamburger_view:hover .tooltip {
+    display: block;
   }
 
   .isScrolled {
@@ -103,10 +149,7 @@
   }
 
   .headerName {
-    padding-left: 0.9rem;
-    font-size: 1.3rem;
-    font-weight: 400;
-    line-height: 1;
+    display: none;
   }
 
   .headerLinkList {
@@ -140,6 +183,10 @@
 
   .backview {
     margin: 2rem;
+  }
+
+  .backview:hover .tooltip1 {
+    display: block;
   }
 
   .menuview_mobile {
