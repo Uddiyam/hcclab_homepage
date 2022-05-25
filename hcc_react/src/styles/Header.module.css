@@ -83,6 +83,10 @@
     background-color: white;
   }
 
+  .isScrolled {
+    border-bottom: 1px solid #c4c4c4;
+  }
+
   .hamburger_view {
     display: flex;
     margin-right: 1rem;
@@ -122,5 +126,40 @@
 
   .hiddenview {
     display: none;
+  }
+
+  .menuview {
+    position: absolute;
+    width: 40%;
+    height: 100vh;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .backview {
+    margin: 2rem;
+  }
+
+  .menuview_mobile {
+    margin-bottom: 2rem;
+    list-style-type: none;
+    justify-content: space-evenly;
+  }
+
+  .headerLinkItem {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+  }
+
+  .shadow_view {
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
   }
 }

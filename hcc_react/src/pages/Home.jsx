@@ -9,6 +9,18 @@ export default function Home() {
 
   var news_list_2022 = [
     {
+      year: "2022.05.20",
+      group: "Conference",
+      context:
+        "학부연구생 채수지, 이규민 학생이 한국정보처리학회 학부생논문경진대회에서 장려상을 수상하였습니다. 축하합니다.",
+    },
+    {
+      year: "2022.05.20",
+      group: "Paper",
+      context:
+        "Our paper was accepted at Human-centric Computing and Information Sciences (SCIE Q1 IF=5.9)",
+    },
+    {
       year: "2022.04.28",
       group: "Conference",
       context:
@@ -189,15 +201,26 @@ export default function Home() {
       <div className={styles.Content}>
         <div className={styles.intro_view}>
           <div className={styles.SubText}>INTRO</div>
-          <div className={styles.s_text}>
-            We conduct Human-Computer Interaction (HCI) research by designing an
-            interactive computing system from human perspectives. Our main
-            research interests are 1) UX/CX Research to identify customer pain
-            points, 2) Human-centered AI to derive insights from data, and 3)
-            Rapid development of MVP (Minimum viable product) to verify
-            solutions. For more detailed research areas of interest, please
-            visit Introduction.
-          </div>
+          <p className={styles.s_text}>
+            We conduct{" "}
+            <span className={styles.point_text}>
+              Human-Computer Interaction
+            </span>{" "}
+            (HCI) research by designing an interactive computing system from
+            human perspectives. Our main research interests are{" "}
+            <span className={styles.point_text}>1) UX/CX Research</span> to
+            identify customer pain points,{" "}
+            <span className={styles.point_text}>2) Human-centered AI</span> to
+            derive insights from data, and{" "}
+            <span className={styles.point_text}>
+              3) Rapid development of MVP
+            </span>{" "}
+            (Minimum viable product) to verify solutions. For more detailed
+            research areas of interest, please visit{" "}
+            <a href="./" className={styles.hyper_text}>
+              Introduction.
+            </a>
+          </p>
 
           <div className={styles.s_text}>
             Currently looking for self-motivated, passionate students. If you
@@ -205,20 +228,32 @@ export default function Home() {
             applications, please feel free to contact me at email.
           </div>
 
-          <div className={styles.s_text}>
-            인간중심컴퓨팅연구실 (HCC Lab)은 인간, 사용자의 관점에서 인터랙티브
-            시스템을 설계하고 개발하는 HCI 연구를 수행합니다. 주요 연구 관심사는
-            다음과 같습니다.
+          <p className={styles.s_text}>
+            <span className={styles.point_text}>
+              인간중심컴퓨팅연구실 (HCC Lab)
+            </span>
+            은 인간, 사용자의 관점에서 인터랙티브 시스템을 설계하고 개발하는 HCI
+            연구를 수행합니다. 주요 연구 관심사는 다음과 같습니다.
             <br /> 1) 고객 경험 개선을 위한 UX/CX 리서치, 2) 데이터로부터 통찰을
             얻는 인간 중심 인공지능, 3) 프로토타입 개발 및 검증 (모바일과 웹
             Full stack)
-          </div>
+          </p>
 
-          <div className={styles.s_text}>
-            더 자세한 소개를 원하면 Introduction 페이지를 참고 바랍니다. HCI,
-            UX, 인공지능응용 관련 연구생(학부/학석연계/석사)에 관심이 있다면
-            모집 안내문을 참고하세요
-          </div>
+          <p className={styles.s_text}>
+            더 자세한 소개를 원하면{" "}
+            <a href="./" className={styles.hyper_text}>
+              Introduction
+            </a>{" "}
+            페이지를 참고 바랍니다. HCI, UX, 인공지능응용 관련{" "}
+            <span className={styles.point_text}>
+              연구생(학부/학석연계/석사)
+            </span>
+            에 관심이 있다면{" "}
+            <a href="./" className={styles.hyper_text}>
+              모집 안내문
+            </a>
+            을 참고하세요
+          </p>
         </div>
 
         <div className={styles.news_view}>

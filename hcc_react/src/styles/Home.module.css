@@ -64,8 +64,21 @@
   max-width: 55rem;
   padding: 0 3rem;
   justify-content: start;
-  display: flex;
   text-align: start;
+}
+
+.point_text {
+  font-weight: 700;
+  color: black;
+  font-size: 0.95rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hyper_text {
+  font-weight: 700;
+  color: #3c78d8;
+  font-size: 0.95rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 .news_view {
@@ -89,7 +102,18 @@
 }
 
 .oneview {
-  margin: auto;
+  margin: 0 auto;
+}
+
+.newstext {
+  line-height: 170%;
+  margin-right: 1rem;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  color: black;
+  justify-content: start;
+  text-align: start;
 }
 
 .line_s {
@@ -132,12 +156,6 @@
   background-color: rgba(243, 243, 243, 1);
 }
 
-.newstext {
-  line-height: 200%;
-  margin-left: 1rem;
-  font-weight: 300;
-}
-
 @media screen and (max-width: 768px) {
   .main_text {
     color: white;
@@ -160,34 +178,12 @@
     margin: auto;
   }
 
-  .news_view {
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(243, 243, 243, 1);
-  }
-  .center {
-    max-width: 40rem;
-    margin: 0 auto;
-    padding: 0 3rem;
-  }
-
-  .SubText1 {
-    width: 100vw;
-    font-size: 2rem;
-    color: black;
-    font-weight: 400;
-    max-width: 40rem;
-  }
-
-  .oneview {
-    margin: 0 auto;
-  }
-
   .newstext {
-    line-height: 150%;
-    margin-left: 0.5rem;
+    line-height: 170%;
+    margin-right: 0.5rem;
     font-weight: 400;
     font-size: 0.9rem;
     font-family: "Open Sans", sans-serif;
   }
+
 }

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Header.module.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 export default function Header() {
   const linksObj = [
@@ -79,6 +80,30 @@ export default function Header() {
           </li>
         </ul>
       </div>
+      {isOpen && (
+        <>
+          <div className={styles.menuview}>
+            <div className={styles.backview} onClick={() => toggleMenu()}>
+              <AiOutlineClose style={{ width: 30, height: 30 }} />
+            </div>
+            <div className={styles.menuview_mobile}>
+              {links.map((l, i) => {
+                return (
+                  <li
+                    className={`${styles.headerLinkItem} ${
+                      i === 0 ? styles.headerCurrentLink : ""
+                    }`}
+                    key={i}
+                  >
+                    <a href={l.link}>{l.name}</a>
+                  </li>
+                );
+              })}
+            </div>
+          </div>
+          <div className={styles.shadow_view}></div>
+        </>
+      )}
     </div>
   );
 }
