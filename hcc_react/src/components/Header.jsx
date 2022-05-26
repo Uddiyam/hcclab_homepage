@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Header.module.css";
 import { useState } from "react";
 
-export default function Header() {
+export default function Header({ url }) {
   const linksObj = [
     {
       name: "Home",
@@ -51,7 +51,7 @@ export default function Header() {
             return (
               <li
                 className={`${styles.headerLinkItem} ${
-                  i === 3 ? styles.headerCurrentLink : ""
+                  i === url ? styles.headerCurrentLink : ""
                 }`}
                 key={i}
               >

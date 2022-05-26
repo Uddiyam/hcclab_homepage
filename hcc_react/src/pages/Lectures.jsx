@@ -95,7 +95,7 @@ export default function Lectures() {
 
   return (
     <div className={styles.lecturesWrapper}>
-      <Header />
+      <Header url={3} />
       <div className={styles.lecturesTitle}>LECTURES</div>
       <div className={styles.lecturesListWrapper}>
         <div className={styles.lecturesListTitle}>LIST</div>
