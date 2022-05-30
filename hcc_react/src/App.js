@@ -1,10 +1,10 @@
 import Lectures from "./pages/Lectures";
-import Home from "./pages/Home";
+import Professor from "./pages/Professor";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Professor />
     </div>
   );
 }
