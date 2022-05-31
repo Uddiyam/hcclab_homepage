@@ -1,7 +1,7 @@
 import React from "react";
 import Activities from "../components/Activities";
 import Header from "../components/Header";
-import "../styles/People.css";
+import styles from "../styles/People.module.css";
 import PeopleIntroGrid from "../components/PeopleIntroGrid";
 
 export default function People() {
@@ -100,12 +100,12 @@ export default function People() {
   return (
     <>
       <Header />
-      <div>
-        <h1 className="member_title">MEMBERS</h1>
+      <div className={styles.Container}>
+        <h1 className={styles.MemberTitle}>MEMBERS</h1>
       </div>
-      <div className="back">
-        <img className="people" src="박규동(square).png" />
-        <div className="info">
+      <div className={styles.Background}>
+        <img className={styles.PeopleImg} src="박규동(square).png" />
+        <div className={styles.Info}>
           <h1>박규동 (Kyudong Park, PhD) | 공학박사 조교수</h1>
           <ul>
             <li>
@@ -117,13 +117,13 @@ export default function People() {
           </ul>
         </div>
       </div>
-      <div className="graduate">
+      <div className={styles.Text}>
         <h2>GRADUATE STUDENTS</h2>
       </div>
-      <div className="back">
-        <img className="people" src="khs.png" />
-        <div className="info_1">
-          <h3>김현수</h3>
+      <div className={styles.Background}>
+        <img className={styles.PeopleImg} src="khs.png" />
+        <div className={styles.Info1}>
+          <h3 className={styles.Name}>김현수</h3>
           <p>
             인공지능응용학과
             <br />
@@ -133,25 +133,25 @@ export default function People() {
           </p>
         </div>
       </div>
-      <div className="graduate">
+      <div className={styles.Text}>
         <h2>UNDERGRADUATE STUDENTS</h2>
       </div>
-      <div className="back">
+      <div className={styles.Background}>
         <PeopleIntroGrid peopleInfo={peopleInfo} />
       </div>
-      <div className="graduate">
+      <div className={styles.Text}>
         <h2>STUDENTS' ACTIVITIES</h2>
       </div>
       <div>
         <Activities activities={activities} />
       </div>
-      <div className="back" style={{ marginTop: "-30px" }}>
+      <div className={styles.Background} style={{ marginTop: "-30px" }}>
         <ul>
-          <li className="type_name">
+          <li className={styles.TypeName}>
             <b>학회 발표</b>
           </li>
         </ul>
-        <ul className="lists">
+        <ul className={styles.Lists}>
           <li>
             2022.04.28. 김현수, 곽소정, 정범영, 박규동.{" "}
             <b>
@@ -218,11 +218,11 @@ export default function People() {
           </li>
         </ul>
       </div>
-      <div className="graduate">
+      <div className={styles.Text}>
         <h2>ALUMNI</h2>
       </div>
-      <div className="back">
-        <ul className="type_name">
+      <div className={styles.Background}>
+        <ul className={styles.TypeName}>
           <li>(학부연구생) 정범영, 2021.01 ~ 2021.12</li>
           <li>(학부연구생) 김채현, 2021.07 ~ 2022.02</li>
         </ul>

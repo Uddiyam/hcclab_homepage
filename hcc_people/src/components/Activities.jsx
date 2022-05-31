@@ -1,15 +1,16 @@
 import { faInfo } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
+import styles from "../styles/Activities.module.css";
 
 export default function Activities({ activities }) {
   return (
-    <div className="back">
+    <div className={styles.Background}>
       {activities.map((type, i) => {
         return (
           <>
             <div>
               <ul>
-                <li className="type_name">
+                <li className={styles.TypeName}>
                   <b>{`${type.type.type_name}`}</b>
                 </li>
               </ul>
@@ -17,7 +18,7 @@ export default function Activities({ activities }) {
             <div>
               {type.lists.map((listItem, i2) => {
                 return (
-                  <ul className="lists">
+                  <ul className={styles.Lists}>
                     <li>
                       {`${listItem.info1} `}
                       <b>{listItem.bold1}</b>

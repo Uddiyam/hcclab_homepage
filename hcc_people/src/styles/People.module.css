@@ -1,0 +1,97 @@
+
+.MemberTitle {
+    text-align: center;
+    margin-top: 200px;
+    font-size: 100px;
+
+}
+
+.MemberTitle:after {
+    content: "";
+    display: block;
+    width: 1100px;
+    border-bottom: 25px solid rgba(151, 79, 89, 1);
+    margin: 10px auto;
+    margin-bottom: 150px;
+  }
+
+  .Background{
+    background-color:rgba(243,243,243,1);
+    background-repeat: repeat-x;
+    padding: 10px;
+}
+
+.PeopleImg {
+    width: 270px;
+    height: 400px;
+    object-fit:contain;
+    padding-left: 300px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.Info {
+    float: right;
+    margin-top: 80px;
+    margin-right: 620px;
+}
+
+@media screen and (max-width: 1400px) {
+    .Container {
+        justify-content: center;
+    }
+
+
+    .Info {
+        margin-right: 0;
+        margin-top: 0;
+        float:right
+    }
+
+}
+
+.Info > h1 {
+    color: rgba(151, 79, 89, 1);
+}
+
+.Text{
+    margin-left: 280px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Info ul >li{
+    font-size: 23px;
+    margin-bottom: 10px;
+    list-style:square;
+}
+
+.Info1 {
+    float: right;
+    margin-top: 80px;
+    margin-right: 1150px;
+}
+
+.Info1 p{
+    font-size: 23px;
+    line-height: 170%;
+}
+
+.Name{
+    font-size: 23px;
+}
+
+.TypeName{
+    list-style:square;
+    font-size: 22px;
+    margin-left: 300px;
+    line-height: 200%
+
+}
+
+.Lists{
+    margin-left: 330px;
+    list-style: square;
+    font-size: 20px;
+    line-height: 250%;
+}

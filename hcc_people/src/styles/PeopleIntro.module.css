@@ -1,0 +1,30 @@
+
+.PeopleImg{
+    width: 239px;
+    height: 400px;
+    object-fit:contain;
+}
+
+.Name{
+    margin-top: -20px;
+    display:inline-block;
+    text-align: center;
+    width: 100%;
+    margin-bottom: -10px;
+
+}
+
+.Intro{
+    white-space: pre-wrap;
+    font-size: 20px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+
+.Wrapper{
+    display:inline-block;
+    margin-left: 290px;
+    margin-right: -15em;
+}

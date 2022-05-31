@@ -1,0 +1,19 @@
+.Background{
+    background-color:rgba(243,243,243,1);
+    background-repeat: repeat-x;
+    padding: 10px;
+}
+
+.TypeName{
+    list-style:square;
+    font-size: 22px;
+    margin-left: 300px;
+    line-height: 200%
+}
+
+.Lists{
+    margin-left: 330px;
+    list-style: square;
+    font-size: 20px;
+    line-height: 250%;
+}
