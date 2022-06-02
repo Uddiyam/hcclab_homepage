@@ -13,7 +13,7 @@ export default function People() {
     },
     {
       name: "김주현 (4학년)",
-      info: "#digital_marketing \n #A/B test",
+      info: "#digital_marketing \n#A/B test",
       image: "kjh.png",
     },
     {
@@ -48,7 +48,7 @@ export default function People() {
     },
     {
       name: "이현빈 (4학년)",
-      info: "#Web #front-end \n#react",
+      info: "#Web #front-end \n  #react",
       image: "이현빈.png",
     },
     {
@@ -106,7 +106,7 @@ export default function People() {
       <div className={styles.Background}>
         <img className={styles.PeopleImg} src="박규동(square).png" />
         <div className={styles.Info}>
-          <h1>박규동 (Kyudong Park, PhD) | 공학박사 조교수</h1>
+          <h2>박규동 (Kyudong Park, PhD) | 공학박사 조교수</h2>
           <ul>
             <li>
               소프트웨어융합대학 정보융합학부 / 일반대학원 인공지능응용학과
@@ -118,11 +118,11 @@ export default function People() {
         </div>
       </div>
       <div className={styles.Text}>
-        <h2>GRADUATE STUDENTS</h2>
+        <h3>GRADUATE STUDENTS</h3>
       </div>
       <div className={styles.Background}>
         <img className={styles.PeopleImg} src="khs.png" />
-        <div className={styles.Info1}>
+        <div className={styles.Info}>
           <h3 className={styles.Name}>김현수</h3>
           <p>
             인공지능응용학과
@@ -134,20 +134,20 @@ export default function People() {
         </div>
       </div>
       <div className={styles.Text}>
-        <h2>UNDERGRADUATE STUDENTS</h2>
+        <h3>UNDERGRADUATE STUDENTS</h3>
       </div>
       <div className={styles.Background}>
         <PeopleIntroGrid peopleInfo={peopleInfo} />
       </div>
       <div className={styles.Text}>
-        <h2>STUDENTS' ACTIVITIES</h2>
+        <h3>STUDENTS' ACTIVITIES</h3>
       </div>
       <div>
         <Activities activities={activities} />
       </div>
       <div className={styles.Background} style={{ marginTop: "-30px" }}>
-        <ul>
-          <li className={styles.TypeName}>
+        <ul className={styles.TypeName}>
+          <li>
             <b>학회 발표</b>
           </li>
         </ul>
@@ -219,10 +219,10 @@ export default function People() {
         </ul>
       </div>
       <div className={styles.Text}>
-        <h2>ALUMNI</h2>
+        <h3>ALUMNI</h3>
       </div>
       <div className={styles.Background}>
-        <ul className={styles.TypeName}>
+        <ul className={styles.Lists}>
           <li>(학부연구생) 정범영, 2021.01 ~ 2021.12</li>
           <li>(학부연구생) 김채현, 2021.07 ~ 2022.02</li>
         </ul>

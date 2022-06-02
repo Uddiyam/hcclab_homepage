@@ -49,7 +49,7 @@ const Header = () => {
           </ul>
         </nav>
         <div className="search">
-          <FontAwesomeIcon className="i" icon={faSearch} size="2x" />
+          <FontAwesomeIcon className="i" icon={faSearch} size="1x" />
           <span className="tooltip">검색창열기</span>
         </div>
       </div>
@@ -58,7 +58,7 @@ const Header = () => {
         <>
           <div className="menuview">
             <div className="backview" onClick={() => toggleMenu()}>
-              <AiOutlineClose style={{ width: 30, height: 30 }} />
+              <AiOutlineClose style={{ width: 10, height: 10 }} />
               <span className="tooltip1">사이드바 닫기</span>
             </div>
             <div className="menuview_mobile">

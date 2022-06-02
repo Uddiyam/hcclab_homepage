@@ -8,14 +8,14 @@ export default function Activities({ activities }) {
       {activities.map((type, i) => {
         return (
           <>
-            <div>
-              <ul>
-                <li className={styles.TypeName}>
+            <div className={styles.Wrap}>
+              <ul className={styles.TypeName}>
+                <li>
                   <b>{`${type.type.type_name}`}</b>
                 </li>
               </ul>
             </div>
-            <div>
+            <div className={styles.Wrap}>
               {type.lists.map((listItem, i2) => {
                 return (
                   <ul className={styles.Lists}>

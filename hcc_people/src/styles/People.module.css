@@ -1,97 +1,100 @@
+*{
+    color:#000;
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
 
 .MemberTitle {
     text-align: center;
-    margin-top: 200px;
-    font-size: 100px;
+    margin-top: 150px;
+    font-size: 65px;
 
 }
 
 .MemberTitle:after {
     content: "";
     display: block;
-    width: 1100px;
-    border-bottom: 25px solid rgba(151, 79, 89, 1);
+    width: 670px;
+    border-bottom: 12px solid rgba(151, 79, 89, 1);
     margin: 10px auto;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
   }
 
   .Background{
     background-color:rgba(243,243,243,1);
     background-repeat: repeat-x;
-    padding: 10px;
+    padding:0 5% 0 3%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .PeopleImg {
-    width: 270px;
-    height: 400px;
+    width: 14%;
+    height: 280px;
     object-fit:contain;
-    padding-left: 300px;
-    margin-right: 10px;
+    padding-left: 10%;
+    margin-right: 3%;
     display: inline-block;
 }
 
 .Info {
     float: right;
-    margin-top: 80px;
-    margin-right: 620px;
+    margin-top: 40px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 700px) {
     .Container {
         justify-content: center;
     }
 
 
     .Info {
-        margin-right: 0;
         margin-top: 0;
         float:right
     }
 
 }
 
-.Info > h1 {
+.Info > h2 {
     color: rgba(151, 79, 89, 1);
+    font-size: 20px;
 }
 
 .Text{
-    margin-left: 280px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .Info ul >li{
-    font-size: 23px;
+    font-size: 15px;
     margin-bottom: 10px;
     list-style:square;
 }
 
-.Info1 {
-    float: right;
-    margin-top: 80px;
-    margin-right: 1150px;
-}
 
-.Info1 p{
-    font-size: 23px;
+.Info p{
+    font-size: 16px;
     line-height: 170%;
 }
 
 .Name{
-    font-size: 23px;
+    font-size: 20px;
 }
 
 .TypeName{
     list-style:square;
-    font-size: 22px;
-    margin-left: 300px;
-    line-height: 200%
-
+    font-size: 17px;
+    padding: 0 10% 0 10%;
+    line-height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 30px;
 }
 
 .Lists{
-    margin-left: 330px;
+    padding: 0 10% 0 10%;
     list-style: square;
-    font-size: 20px;
+    font-size: 13px;
     line-height: 250%;
 }
+
