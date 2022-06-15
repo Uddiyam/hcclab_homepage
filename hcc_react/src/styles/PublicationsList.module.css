@@ -12,13 +12,12 @@
   color: rgba(151, 79, 89, 1);
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  padding: 1.8rem 0 1.2em calc((100% - 70rem) / 2);
+  padding: 1.8rem 0 0 calc((100% - 70rem) / 2);
 }
 
 .publicationsListContent ul {
   list-style-type: none;
-  margin-bottom: 2rem;
-  padding: 0rem calc((100% - 70rem) / 2) 1.5em calc((100% - 70rem) / 2);
+  padding: 1.5em calc((100% - 70rem) / 2);
 }
 
 .publicationsListContent li {
@@ -50,4 +49,28 @@
 
 .publicationsListPage > a {
   font-weight: 600;
+}
+
+@media screen and (max-width: 1214px) {
+  .publicationsListTitle,
+  .publicationsListContent ul {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .publicationsListWrapper {
+    padding: 0rem 2rem;
+  }
+
+  .publicationsListTitle {
+    font-size: 1.4rem;
+  }
+
+  .publicationsListTitle,
+  .publicationsListContent ul {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
 }

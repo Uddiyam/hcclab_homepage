@@ -12,3 +12,11 @@
   margin-bottom: 5.5rem;
   padding-top: 5.5rem;
 }
+
+@media screen and (max-width: 767px) {
+  .publicationsTitle {
+    min-width: 28rem;
+    font-size: 3.4rem;
+    padding-top: 5rem;
+  }
+}

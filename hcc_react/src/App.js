@@ -4,8 +4,8 @@ import Publications from "./pages/Publications";
 function App() {
   return (
     <div className="App">
-      {/* <Lectures /> */}
-      <Publications />
+      <Lectures />
+      {/* <Publications /> */}
     </div>
   );
 }
