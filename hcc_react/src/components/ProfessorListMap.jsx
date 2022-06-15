@@ -7,6 +7,7 @@ import styles from "../styles/Professor.module.css";
 
 export default function ProfessorListMap({ list, category }) {
   const [category_num] = useState(category); //유형 불러오기
+  
   return (
     <div>
       {category_num === 0 && (
