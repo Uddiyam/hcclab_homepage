@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Header.module.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineDown } from "react-icons/ai";
 
 export default function Header() {
   const linksObj = [
@@ -71,6 +71,10 @@ export default function Header() {
                 </li>
               );
             })}
+            <div className={styles.moreview}>
+              <div className={styles.moretext}>더보기</div>
+              <AiOutlineDown />
+            </div>
           </div>
           <li className={styles.headerSearchIcon}>
             <img
