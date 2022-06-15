@@ -5,7 +5,7 @@
 .TitleView {
   height: 20rem;
   text-align: center;
-  background-image: url("../../public/image/home_back.jpg");
+  background-image: url("../../public/images/home_back.jpg");
   background-size: cover;
   font-family: "Open Sans", sans-serif;
 }
@@ -187,7 +187,7 @@
     padding-top: 3rem;
     height: 23rem;
     text-align: center;
-    background-image: url("../../public/image/home_back.jpg");
+    background-image: url("../../public/images/home_back.jpg");
     background-size: cover;
     font-family: "Open Sans", sans-serif;
   }

@@ -4,8 +4,6 @@ import { useState } from "react";
 import { ReactComponent as Dropdown } from "../icons/dropdown.svg";
 import { ReactComponent as Hamburger } from "../icons/hamburger.svg";
 import { ReactComponent as Cross } from "../icons/cross.svg";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose, AiOutlineDown } from "react-icons/ai";
 
 export default function Header({ url }) {
   const linksObj = [
@@ -34,7 +32,7 @@ export default function Header({ url }) {
       display: "none",
     },
   ];
-  const [links, setLinks] = useState(linksObj);
+  const [links] = useState(linksObj);
   const [isScroll, setIsScroll] = useState(false);
   const [menuShowMore, setMenuShowMore] = useState(false);
   const [isModal, setIsModal] = useState(null);
@@ -46,11 +44,6 @@ export default function Header({ url }) {
     window.scrollY ? setIsScroll(true) : setIsScroll(false);
   });
 
-  const [isOpen, setMenu] = useState(false);
-  const toggleMenu = () => {
-    setMenu((isOpen) => !isOpen);
-  };
-
   return (
     <div
       className={`${styles.headerWrapper} ${
@@ -58,7 +51,6 @@ export default function Header({ url }) {
       } ${isModal ? styles.isTransparent : ""}`}
     >
       <div className={styles.headerLeft}>
-
         <div
           onClick={handleModal}
           className={`${styles.headerIconWrapper} ${
@@ -78,7 +70,6 @@ export default function Header({ url }) {
               height="24"
             />
           )}
-
         </div>
         <img
           width="142"
@@ -136,7 +127,6 @@ export default function Header({ url }) {
               </li>
             );
           })}
-
         </ul>
         <span
           className={styles.headerSearchIcon}
@@ -151,7 +141,6 @@ export default function Header({ url }) {
       </div>
       {isModal && (
         <div className={styles.headerModal} onClick={handleModal}></div>
-
       )}
     </div>
   );
