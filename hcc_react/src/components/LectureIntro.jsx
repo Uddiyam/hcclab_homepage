@@ -8,7 +8,7 @@ export default function LectureIntro({
   summary,
 }) {
   return (
-    <div className={styles.lectureIntroWrapepr}>
+    <div className={styles.lectureIntroWrapper}>
       <div className={styles.lectureIntro_TitleEng}>{titleEng}</div>
       <div className={styles.lectureIntro_TitleKor}>{`(${titleKor})`}</div>
       <div

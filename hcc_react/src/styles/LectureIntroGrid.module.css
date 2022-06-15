@@ -9,14 +9,38 @@
   width: 100vw;
   font-size: 1.75rem;
   color: rgba(151, 79, 89, 1);
-  padding: 2.6rem calc((100% - 70rem) / 2) 1.8rem;
+  padding: 2.6rem calc((100% - 70rem) / 2);
   margin: 0 auto;
   background-color: rgba(243, 243, 243, 1);
 }
 
 .lectureIntroGridTemplate {
   display: grid;
-  grid-template-columns: repeat(2, 34rem);
+  grid-template-columns: repeat(2, minmax(16rem, 540px));
   gap: 6rem 2rem;
   padding: 4rem 0;
+}
+
+@media screen and (max-width: 1214px) {
+  .lectureIntroGridTitle {
+    padding-left: 4rem;
+  }
+
+  .lectureIntroGridTemplate {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lectureIntroGridTitle {
+    font-size: 1.6rem;
+    padding: 2.4rem 5rem;
+  }
+
+  .lectureIntroGridTemplate {
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
 }

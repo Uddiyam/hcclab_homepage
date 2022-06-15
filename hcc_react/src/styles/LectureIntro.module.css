@@ -23,3 +23,19 @@
   margin-bottom: 1rem;
   font-weight: 400;
 }
+
+@media screen and (max-width: 767px) {
+  .lectureIntroWrapper {
+    padding: 0rem 4rem;
+  }
+
+  .lectureIntro_TitleEng,
+  .lectureIntro_TitleKor {
+    font-size: 1.2rem;
+  }
+
+  .lectureIntro_YearSemester,
+  .lectureIntro_Summary {
+    font-size: 0.8rem;
+  }
+}
