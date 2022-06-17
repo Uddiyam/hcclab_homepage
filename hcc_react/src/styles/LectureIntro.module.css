@@ -1,0 +1,41 @@
+.lectureIntro_TitleEng {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.lectureIntro_TitleKor {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.lectureIntro_YearSemester {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.lectureIntro_Summary {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 767px) {
+  .lectureIntroWrapper {
+    padding: 0rem 4rem;
+  }
+
+  .lectureIntro_TitleEng,
+  .lectureIntro_TitleKor {
+    font-size: 1.2rem;
+  }
+
+  .lectureIntro_YearSemester,
+  .lectureIntro_Summary {
+    font-size: 0.8rem;
+  }
+}

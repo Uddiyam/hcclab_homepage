@@ -1,0 +1,70 @@
+.lecturesTitle {
+  max-width: 46rem;
+  font-size: 4rem;
+  border-bottom: 0.8rem solid rgba(151, 79, 89, 1);
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5.5rem;
+  padding-top: 5.5rem;
+}
+
+.lecturesListWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.lecturesListTitle {
+  width: 100vw;
+  font-size: 1.75rem;
+  color: rgba(151, 79, 89, 1);
+  padding: 2.6rem calc((100% - 70rem) / 2);
+  margin: 0 auto;
+  background-color: rgba(243, 243, 243, 1);
+}
+
+.lecturesListContent {
+  padding: 2rem calc((100% - 70rem) / 2);
+}
+
+.lecturesListContent > ul {
+  list-style-type: none;
+}
+
+.lecturesListContent li {
+  margin-bottom: 1.4rem;
+}
+
+.lecturesListContent span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 1214px) {
+  .lecturesListTitle {
+    padding-left: 4rem;
+  }
+
+  .lecturesListContent {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lecturesTitle {
+    max-width: 28rem;
+    font-size: 3.4rem;
+    padding-top: 5rem;
+  }
+
+  .lecturesListTitle {
+    font-size: 1.6rem;
+    padding: 2.4rem 5rem;
+  }
+
+  .lecturesListContent {
+    padding: 2rem 5rem;
+  }
+}
