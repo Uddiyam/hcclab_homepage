@@ -1,0 +1,100 @@
+*{
+    color:#000;
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+.MemberTitle {
+    text-align: center;
+    margin-top: 150px;
+    font-size: 65px;
+
+}
+
+.MemberTitle:after {
+    content: "";
+    display: block;
+    width: 670px;
+    border-bottom: 12px solid rgba(151, 79, 89, 1);
+    margin: 10px auto;
+    margin-bottom: 100px;
+  }
+
+  .Background{
+    background-color:rgba(243,243,243,1);
+    background-repeat: repeat-x;
+    padding:0 5% 0 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.PeopleImg {
+    width: 14%;
+    height: 280px;
+    object-fit:contain;
+    padding-left: 10%;
+    margin-right: 3%;
+    display: inline-block;
+}
+
+.Info {
+    float: right;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 700px) {
+    .Container {
+        justify-content: center;
+    }
+
+
+    .Info {
+        margin-top: 0;
+        float:right
+    }
+
+}
+
+.Info > h2 {
+    color: rgba(151, 79, 89, 1);
+    font-size: 20px;
+}
+
+.Text{
+    padding-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Info ul >li{
+    font-size: 15px;
+    margin-bottom: 10px;
+    list-style:square;
+}
+
+
+.Info p{
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.Name{
+    font-size: 20px;
+}
+
+.TypeName{
+    list-style:square;
+    font-size: 17px;
+    padding: 0 10% 0 10%;
+    line-height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.Lists{
+    padding: 0 10% 0 10%;
+    list-style: square;
+    font-size: 13px;
+    line-height: 250%;
+}
+
