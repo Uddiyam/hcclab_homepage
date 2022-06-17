@@ -1,15 +1,11 @@
-import Home from "./pages/Home";
-import Introduction from "./pages/Introduction";
-import Lectures from "./pages/Lectures";
-import People from "./pages/People";
-import Professor from "./pages/Professor";
-import Publications from "./pages/Publications";
+import React from "react";
+import AppRouter from "./components/Router";
 
 function App() {
   return (
-    <div className="App">
-      <Publications />
-    </div>
+    <>
+      <AppRouter />
+    </>
   );
 }
 

@@ -1,4 +1,5 @@
 import Header from "./Header";
+import Home from "../pages/Home";
 import People from "../pages/People";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Lectures from "../pages/Lectures";
@@ -10,7 +11,7 @@ const AppRouter = () => {
     <Router>
       <Routes>
         <>
-          <Route exact path="/" element={<Header />} />
+          <Route exact path="/Home" element={<Home />} />
           <Route exact path="/Introduction" element={<Introduction />} />
           <Route exact path="/People" element={<People />} />
           <Route exact path="/Lectures" element={<Lectures />} />

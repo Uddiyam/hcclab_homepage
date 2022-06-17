@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ReactComponent as Dropdown } from "../icons/dropdown.svg";
 import { ReactComponent as Hamburger } from "../icons/hamburger.svg";
 import { ReactComponent as Cross } from "../icons/cross.svg";
+import { Link } from "react-router-dom";
 
 export default function Header({ url }) {
   const linksObj = [
@@ -13,11 +14,11 @@ export default function Header({ url }) {
     },
     {
       name: "Introduction",
-      link: "/",
+      link: "/Introduction",
     },
     {
       name: "People",
-      link: "/",
+      link: "/People",
     },
     {
       name: "Lectures",
@@ -25,7 +26,7 @@ export default function Header({ url }) {
     },
     {
       name: "Publications",
-      link: "/",
+      link: "/Publications",
     },
     {
       name: "더보기",
@@ -95,7 +96,7 @@ export default function Header({ url }) {
                 key={i}
               >
                 {l.link !== undefined ? (
-                  <a href={l.link}>{l.name}</a>
+                  <Link to={l.link}>{l.name}</Link>
                 ) : (
                   <span
                     className={styles.headerShowMore}
@@ -115,7 +116,7 @@ export default function Header({ url }) {
                                 } ${isModal === true && styles.listSlideIn}`}
                                 key={i}
                               >
-                                <a href={l.link}>{l.name}</a>
+                                <Link to={l.link}>{l.name}</Link>
                               </li>
                             );
                           })}
