@@ -1,0 +1,17 @@
+.Background{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgba(243,243,243,1);
+    background-repeat: repeat-x;
+    padding : 0 5% 0 5%;
+}
+
+@media screen and (max-width: 900px){
+    .Background{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgba(243,243,243,1);
+    background-repeat: repeat-x;
+    padding : 0 5% 0 5%;
+}
+}
