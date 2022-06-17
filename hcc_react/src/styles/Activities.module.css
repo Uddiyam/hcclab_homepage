@@ -1,0 +1,28 @@
+*{
+    color:#000;
+    font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
+.Background{
+    background-color:rgba(243,243,243,1);
+    background-repeat: repeat-x;
+    padding:0 10% 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TypeName{
+    list-style:square;
+    font-size: 17px;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+
+.Lists{
+    list-style: square;
+    font-size: 13px;
+    line-height: 250%;
+}
+.Wrap{
+    width: 100%;
+}
