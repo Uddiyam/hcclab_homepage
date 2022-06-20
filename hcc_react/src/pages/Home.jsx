@@ -193,7 +193,7 @@ export default function Home() {
 
   return (
     <div className={styles.homeview}>
-      <Header url={1} />
+      <Header url={0} />
       <div className={styles.TitleView}>
         <div className={styles.main_text}>
           HUMAN-CENTERED
