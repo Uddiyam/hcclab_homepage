@@ -132,7 +132,7 @@ const projects_sec = [
 export default function Introduction() {
   return (
     <>
-      <Header></Header>
+      <Header url={1} />
 
       <div className={styles.center}>
         <div className={styles.topWord}>WHERE TECHNOLOGY MEETS HUMANITY</div>
