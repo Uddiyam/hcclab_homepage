@@ -111,7 +111,9 @@ export default function People() {
           alt="교수님"
         />
         <div className={styles.Info}>
-          <h2>박규동 (Kyudong Park, PhD) | 공학박사 조교수</h2>
+          <h2 className={styles.Name}>
+            박규동 (Kyudong Park, PhD) | 공학박사 조교수
+          </h2>
           <ul>
             <li>
               소프트웨어융합대학 정보융합학부 / 일반대학원 인공지능응용학과
@@ -152,7 +154,7 @@ export default function People() {
       <div>
         <Activities activities={activities} />
       </div>
-      <div className={styles.Background} style={{ marginTop: "-30px" }}>
+      <div className={styles.Background} style={{ marginTop: "-25px" }}>
         <ul className={styles.TypeName}>
           <li>
             <b>학회 발표</b>
