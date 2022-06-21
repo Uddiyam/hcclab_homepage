@@ -1,8 +1,9 @@
 import React from "react";
-import Activities from "../components/Activities";
-import Header from "../components/Header";
-import styles from "../styles/People.module.css";
-import PeopleIntroGrid from "../components/PeopleIntroGrid";
+import Activities from "../../components/Activities";
+import Header from "../../components/Header";
+import styles from "../../styles/People.module.css";
+import PeopleIntroGrid from "../../components/PeopleIntroGrid";
+import { Link } from "react-router-dom";
 
 export default function People() {
   const peopleInfo = [
@@ -99,7 +100,7 @@ export default function People() {
 
   return (
     <>
-      <Header />
+      <Header url={2} />
       <div className={styles.Container}>
         <h1 className={styles.MemberTitle}>MEMBERS</h1>
       </div>
@@ -117,7 +118,9 @@ export default function People() {
             </li>
             <li>Email : kdpark@kw.ac.kr / Tel : 02-940-5638</li>
             <li>Office : 새빛관 804호 / 일정 : 보기</li>
-            <li>자세히</li>
+            <li>
+              <Link to={"/Professor"}>자세히</Link>
+            </li>
           </ul>
         </div>
       </div>
