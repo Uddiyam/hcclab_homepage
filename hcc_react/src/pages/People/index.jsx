@@ -102,7 +102,7 @@ export default function People() {
     <>
       <Header url={2} />
       <div className={styles.Container}>
-        <h1 className={styles.MemberTitle}>MEMBERS</h1>
+        <div className={styles.MemberTitle}>MEMBERS</div>
       </div>
       <div className={styles.Background}>
         <img
