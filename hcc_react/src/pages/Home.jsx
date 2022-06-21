@@ -6,7 +6,6 @@ import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 
 export default function Home() {
   const [show, view_show] = useState(false);
-
   var news_list_2022 = [
     {
       year: "2022.05.20",
