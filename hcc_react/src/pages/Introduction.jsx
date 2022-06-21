@@ -215,9 +215,7 @@ export default function Introduction() {
 
         <p className={styles.titlefirst}>PROJECTS </p>
         <div className={styles.titlefirst2}>
-          <p className={styles.subtitle}>
-            <b>On-going Projects</b>
-          </p>
+          <p className={styles.subtitle}>On-going Projects</p>
 
           <ul className={styles.lastlists}>
             {projects_first.map((project) => (
@@ -225,9 +223,7 @@ export default function Introduction() {
             ))}
           </ul>
 
-          <p className={styles.subtitle}>
-            <b>Finished Projects </b>
-          </p>
+          <p className={styles.subtitle}>Finished Projects</p>
           <ul className={styles.lastlists}>
             {projects_sec.map((project) => (
               <ProjectMaker2 index={project.index} from={project.from} />

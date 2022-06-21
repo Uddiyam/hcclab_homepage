@@ -12,7 +12,6 @@ const AppRouter = () => {
       <Routes>
         <>
           <Route exact path="" element={<Home />} />
-          <Route exact path="/Home" element={<Home />} />
           <Route exact path="/Introduction" element={<Introduction />} />
           <Route exact path="/People" element={<People />} />
           <Route exact path="/Lectures" element={<Lectures />} />

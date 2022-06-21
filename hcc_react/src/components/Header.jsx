@@ -10,7 +10,7 @@ export default function Header({ url }) {
   const linksObj = [
     {
       name: "Home",
-      link: "/Home",
+      link: "/",
     },
     {
       name: "Introduction",
@@ -72,13 +72,15 @@ export default function Header({ url }) {
             />
           )}
         </div>
-        <img
-          width="142"
-          className={styles.headerLogo}
-          src="/logos/logo_kw.jpg"
-          alt="광운대학교 로고"
-        />
-        <span className={styles.headerName}>KW-HCC Lab</span>
+        <a href={"/"} className={styles.homeclick}>
+          <img
+            width="142"
+            className={styles.headesrLogo}
+            src="/logos/logo_kw.jpg"
+            alt="광운대학교 로고"
+          />
+          <span className={styles.headerName}>KW-HCC Lab</span>
+        </a>
       </div>
       <div className={styles.headerRight}>
         <ul

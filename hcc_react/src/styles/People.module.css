@@ -1,12 +1,7 @@
-* {
-  color: #000;
-  font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-}
-
 .MemberTitle {
   text-align: center;
   margin-top: 150px;
-  font-size: 65px;
+  font-size: 4rem;
 }
 
 .MemberTitle:after {

@@ -221,7 +221,7 @@ export default function Home() {
             </span>{" "}
             (Minimum viable product) to verify solutions. For more detailed
             research areas of interest, please visit{" "}
-            <a href="./" className={styles.hyper_text}>
+            <a href="./Introduction" className={styles.hyper_text}>
               Introduction.
             </a>
           </p>
@@ -245,7 +245,7 @@ export default function Home() {
 
           <p className={styles.s_text}>
             더 자세한 소개를 원하면{" "}
-            <a href="./" className={styles.hyper_text}>
+            <a href="./Introduction" className={styles.hyper_text}>
               Introduction
             </a>{" "}
             페이지를 참고 바랍니다. HCI, UX, 인공지능응용 관련{" "}
@@ -253,7 +253,12 @@ export default function Home() {
               연구생(학부/학석연계/석사)
             </span>
             에 관심이 있다면{" "}
-            <a href="./" className={styles.hyper_text}>
+            <a
+              href="https://www.notion.so/HCC-Lab-f5ef11264d2a4e8e8d0c5e7469491f06"
+              className={styles.hyper_text}
+              target="_blank"
+              rel="noreferrer"
+            >
               모집 안내문
             </a>
             을 참고하세요

@@ -60,6 +60,13 @@
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1;
+  color: black;
+}
+
+.homeclick {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
 }
 
 .headerRight {
