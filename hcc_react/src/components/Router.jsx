@@ -5,10 +5,12 @@ import Lectures from "../pages/Lectures";
 import Publications from "../pages/Publications";
 import Professor from "../pages/People/Professor";
 import Introduction from "../pages/Introduction";
+import ScrollToTop from "./ScrollToTop";
 
 const AppRouter = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <>
           <Route exact path="" element={<Home />} />
