@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+.introBold {
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
 
 .topWord {
   font-size: 48px;

@@ -5,7 +5,7 @@ import styles from "../styles/Introduction.module.css";
 function ProjectMaker({ index, from }) {
   return (<>
       <li className={styles.indexs}>
-          {index}  ({from})
+          {index} <b className={styles.introBold}>({from})</b>
       </li>
         </>
   );
@@ -45,7 +45,7 @@ const projects_first = [
 function ProjectMaker2({ index, from }) {
   return (
       <li className={styles.indexs}>
-        {index} ({from})
+        {index} (<b className={styles.introBold}>{from}</b>)
       </li>
   );
 }
