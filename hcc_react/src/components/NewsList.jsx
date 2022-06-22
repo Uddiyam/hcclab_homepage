@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styles from "../styles/Home.module.css";
 
 export default function NewsList({ year, group, context }) {
