@@ -1,15 +1,14 @@
 import React from "react";
 import Header from "../components/Header";
 import styles from "../styles/Introduction.module.css";
-import "../index.css";
 
 function ProjectMaker({ index, from }) {
-  return (
-    <>
-      <li>
-        {index} (<b>{from}</b>)
+  return (<>
+      <li className={styles.indexs}>
+          {index} <b className={styles.introBold}>({from})</b>
+
       </li>
-    </>
+        </>
   );
 }
 
@@ -46,12 +45,9 @@ const projects_first = [
 
 function ProjectMaker2({ index, from }) {
   return (
-    <>
-      <li>
-        {" "}
-        {index} (<b>{from}</b>){" "}
+      <li className={styles.indexs}>
+        {index} (<b className={styles.introBold}>{from}</b>)
       </li>
-    </>
   );
 }
 
@@ -137,11 +133,7 @@ export default function Introduction() {
         <div className={styles.topWord}>WHERE TECHNOLOGY MEETS HUMANITY</div>
 
         <div>
-          <img
-            className={styles.imgfirst}
-            src="/logos/process2.png"
-            alt="process2"
-          />
+          <img className={styles.imgfirst} src="/logos/process2.png" />
         </div>
 
         <p className={styles.conceptfirst}>
@@ -214,8 +206,12 @@ export default function Introduction() {
         </div>
 
         <p className={styles.titlefirst}>PROJECTS </p>
+
         <div className={styles.titlefirst2}>
-          <p className={styles.subtitle}>On-going Projects</p>
+          <p className={styles.subtitle}>
+            <b className={styles.indexheader}>On-going Projects</b>
+          </p>
+
 
           <ul className={styles.lastlists}>
             {projects_first.map((project) => (
@@ -223,12 +219,16 @@ export default function Introduction() {
             ))}
           </ul>
 
-          <p className={styles.subtitle}>Finished Projects</p>
+          <p className={styles.subtitle}>
+            <b className={styles.indexheader}>Finished Projects </b>
+          </p>
+          
           <ul className={styles.lastlists}>
             {projects_sec.map((project) => (
               <ProjectMaker2 index={project.index} from={project.from} />
             ))}
           </ul>
+
         </div>
       </div>
     </>

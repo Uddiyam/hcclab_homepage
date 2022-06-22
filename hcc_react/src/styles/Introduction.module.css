@@ -1,3 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.introBold {
+  font-family: "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+}
+
 .topWord {
   font-size: 48px;
   margin-top: 80px;
@@ -14,7 +24,6 @@
 .center {
   padding: 0;
   text-align: center;
-  /* justify-content: center; */
 }
 
 .conceptfirst {
@@ -32,7 +41,15 @@
   color: white;
   margin-top: 2%;
   margin-bottom: 2%;
-  font-family: "Oswald", sans-serif;
+  
+}
+
+.titlefirst2 {
+  /* background-color: blue; */
+  padding-left: 10rem;
+  padding-right: 10rem;
+  /* font-family: none; */
+
 }
 
 .imagethree {
@@ -97,8 +114,8 @@
 .subtitle {
   font-size: 20px;
   text-align: left;
-  margin-bottom: 15px;
-  padding-left: 3%;
+  margin-bottom: 1%;
+  padding-left: 2%;
   text-align: left;
   color: #974f59;
   font-family: sans-serif;
@@ -127,10 +144,17 @@
   padding: 0;
 }
 
-.titlefirst2 {
-  /* background-color: blue; */
-  padding-left: 10rem;
-  padding-right: 10rem;
+
+
+.indexheader {
+  color: #974f59;
+  font-family: none;
+  margin-bottom: 0;
+}
+
+.indexs {
+  margin-top: 0;
+  font-family: none;
 }
 
 @media screen and (max-width: 768px) {
