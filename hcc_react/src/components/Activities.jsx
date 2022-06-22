@@ -1,4 +1,4 @@
-import { faInfo } from "@fortawesome/free-solid-svg-icons";
+// import { faInfo } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import styles from "../styles/Activities.module.css";
 

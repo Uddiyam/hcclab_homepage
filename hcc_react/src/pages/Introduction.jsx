@@ -1,16 +1,13 @@
 import React from "react";
 import Header from "../components/Header";
 import styles from "../styles/Introduction.module.css";
-import "../index.css";
 
 function ProjectMaker({ index, from }) {
-  return (
-    <>
-      <li>
-        {" "}
-        {index} (<b>{from}</b>){" "}
+  return (<>
+      <li className={styles.indexs}>
+          {index}  ({from})
       </li>
-    </>
+        </>
   );
 }
 
@@ -47,12 +44,9 @@ const projects_first = [
 
 function ProjectMaker2({ index, from }) {
   return (
-    <>
-      <li>
-        {" "}
-        {index} (<b>{from}</b>){" "}
+      <li className={styles.indexs}>
+        {index} ({from})
       </li>
-    </>
   );
 }
 
@@ -138,12 +132,11 @@ export default function Introduction() {
         <div className={styles.topWord}>WHERE TECHNOLOGY MEETS HUMANITY</div>
 
         <div>
-          {" "}
           <img className={styles.imgfirst} src="/logos/process2.png" />
         </div>
 
         <p className={styles.conceptfirst}>
-          {" "}
+          
           인공지능이 갖는 <b>도구로서의 잠재력</b>을 극대화하여{" "}
           <b>인간/사용자의 관점</b>에서 컴퓨팅시스템을 연구/개발합니다.
         </p>
@@ -206,10 +199,11 @@ export default function Introduction() {
         </div>
 
         <p className={styles.titlefirst}>PROJECTS </p>
+
         <div className={styles.titlefirst2}>
+
           <p className={styles.subtitle}>
-            {" "}
-            <b>On-going Projects</b>{" "}
+            <b className={styles.indexheader}>On-going Projects</b>
           </p>
 
           <ul className={styles.lastlists}>
@@ -219,14 +213,16 @@ export default function Introduction() {
           </ul>
 
           <p className={styles.subtitle}>
-            {" "}
-            <b>Finished Projects </b>
+            
+            <b className={styles.indexheader}>Finished Projects </b>
           </p>
+          
           <ul className={styles.lastlists}>
             {projects_sec.map((project) => (
               <ProjectMaker2 index={project.index} from={project.from} />
             ))}
           </ul>
+
         </div>
       </div>
     </>
