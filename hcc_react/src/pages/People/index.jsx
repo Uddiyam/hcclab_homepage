@@ -1,65 +1,66 @@
 import React from "react";
-import Activities from "../components/Activities";
-import Header from "../components/Header";
-import styles from "../styles/People.module.css";
-import PeopleIntroGrid from "../components/PeopleIntroGrid";
+import Activities from "../../components/Activities";
+import Header from "../../components/Header";
+import styles from "../../styles/People.module.css";
+import PeopleIntroGrid from "../../components/PeopleIntroGrid";
+import { Link } from "react-router-dom";
 
 export default function People() {
   const peopleInfo = [
     {
       name: "채수지 (4학년)",
       info: "#front-end #react \n#android",
-      image: "csj.png",
+      image: "person_img/csj.png",
     },
     {
       name: "김주현 (4학년)",
       info: "#digital_marketing \n#A/B test",
-      image: "kjh.png",
+      image: "person_img/kjh.png",
     },
     {
       name: "이영현 (3학년)",
       info: "#UX #HCI \n#PM",
-      image: "lyh2.png",
+      image: "person_img/lyh2.png",
     },
     {
       name: "곽소정 (4학년)",
       info: "#Usability_test \n#UXR #HCI",
-      image: "ksj2.png",
+      image: "person_img/ksj2.png",
     },
     {
       name: "신수빈 (4학년)",
       info: "#UX_design\n #HCI",
-      image: "ssb.png",
+      image: "person_img/ssb.png",
     },
     {
       name: "김종민 (4학년)",
       info: "#visual_analytics \n#front-end",
-      image: "kjm.png",
+      image: "person_img/kjm.png",
     },
     {
       name: "이규민 (4학년)",
       info: "#dev #back-end \n #spring #android",
-      image: "lkm.png",
+      image: "person_img/lkm.png",
     },
     {
       name: "변유진 (3학년)",
       info: "#dev #front-end \n #react",
-      image: "변유진.png",
+      image: "person_img/변유진.png",
     },
     {
       name: "이현빈 (4학년)",
       info: "#Web #front-end \n  #react",
-      image: "이현빈.png",
+      image: "person_img/이현빈.png",
     },
     {
       name: "이지은(3학년)",
       info: "#dev #back-end \n#spring",
-      image: "lje.png",
+      image: "person_img/lje.png",
     },
     {
       name: "홍성혁(4학년)",
       info: "#dev #front-end \n #react",
-      image: "홍성혁.png",
+      image: "person_img/홍성혁.png",
     },
   ];
 
@@ -99,25 +100,29 @@ export default function People() {
 
   return (
     <>
-      <Header />
+      <Header url={2} />
       <div className={styles.Container}>
-        <h1 className={styles.MemberTitle}>MEMBERS</h1>
+        <div className={styles.MemberTitle}>MEMBERS</div>
       </div>
       <div className={styles.Background}>
         <img
           className={styles.PeopleImg}
-          src="박규동(square).png"
+          src="person_img/박규동(square).png"
           alt="교수님"
         />
         <div className={styles.Info}>
-          <h2>박규동 (Kyudong Park, PhD) | 공학박사 조교수</h2>
+          <h2 className={styles.Name}>
+            박규동 (Kyudong Park, PhD) | 공학박사 조교수
+          </h2>
           <ul>
             <li>
               소프트웨어융합대학 정보융합학부 / 일반대학원 인공지능응용학과
             </li>
             <li>Email : kdpark@kw.ac.kr / Tel : 02-940-5638</li>
             <li>Office : 새빛관 804호 / 일정 : 보기</li>
-            <li>자세히</li>
+            <li>
+              <Link to={"/Professor"}>자세히</Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -125,7 +130,11 @@ export default function People() {
         <h3>GRADUATE STUDENTS</h3>
       </div>
       <div className={styles.Background}>
-        <img className={styles.PeopleImg} src="khs.png" alt="석사님" />
+        <img
+          className={styles.PeopleImg}
+          src="person_img/khs.png"
+          alt="석사님"
+        />
         <div className={styles.Info}>
           <h3 className={styles.Name}>김현수</h3>
           <p>
@@ -149,7 +158,7 @@ export default function People() {
       <div>
         <Activities activities={activities} />
       </div>
-      <div className={styles.Background} style={{ marginTop: "-30px" }}>
+      <div className={styles.Background} style={{ marginTop: "-25px" }}>
         <ul className={styles.TypeName}>
           <li>
             <b>학회 발표</b>

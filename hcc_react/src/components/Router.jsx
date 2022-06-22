@@ -1,24 +1,27 @@
-import Header from "./Header";
 import Home from "../pages/Home";
 import People from "../pages/People";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Lectures from "../pages/Lectures";
 import Publications from "../pages/Publications";
+import Professor from "../pages/People/Professor";
 import Introduction from "../pages/Introduction";
+import ScrollToTop from "./ScrollToTop";
 
 const AppRouter = () => {
   return (
-    <Router>
+    <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <>
-          <Route exact path="/Home" element={<Home />} />
+          <Route exact path="" element={<Home />} />
           <Route exact path="/Introduction" element={<Introduction />} />
           <Route exact path="/People" element={<People />} />
           <Route exact path="/Lectures" element={<Lectures />} />
+          <Route exact path="/Professor" element={<Professor />} />
           <Route exact path="/Publications" element={<Publications />} />
         </>
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 };
 

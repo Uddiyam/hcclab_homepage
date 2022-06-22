@@ -6,6 +6,7 @@ function ProjectMaker({ index, from }) {
   return (<>
       <li className={styles.indexs}>
           {index} <b className={styles.introBold}>({from})</b>
+
       </li>
         </>
   );
@@ -126,7 +127,7 @@ const projects_sec = [
 export default function Introduction() {
   return (
     <>
-      <Header></Header>
+      <Header url={1} />
 
       <div className={styles.center}>
         <div className={styles.topWord}>WHERE TECHNOLOGY MEETS HUMANITY</div>
@@ -136,7 +137,6 @@ export default function Introduction() {
         </div>
 
         <p className={styles.conceptfirst}>
-          
           인공지능이 갖는 <b>도구로서의 잠재력</b>을 극대화하여{" "}
           <b>인간/사용자의 관점</b>에서 컴퓨팅시스템을 연구/개발합니다.
         </p>
@@ -146,31 +146,37 @@ export default function Introduction() {
           <div></div>
 
           <div className={styles.widthsize}>
-            <img className={styles.imagethree} src="/logos/first.png" /> <br />
+            <img
+              className={styles.imagethree}
+              src="/logos/first.png"
+              alt="first"
+            />
+            <br />
             <div className={styles.indexs}>
-              <div className={styles.titlesecond}> 01. Human-centered AI </div>{" "}
+              <div className={styles.titlesecond}> 01. Human-centered AI </div>
               <br />
               <p className={styles.listfirst}>
-                {" "}
                 AI 기반 재활 보조 애플리케이션 개발 <br />
                 AI 기반 멘탈 헬스케어 시스템 설계
                 <br />
-                AI 기반 고객 경험 (CX) 관리{" "}
+                AI 기반 고객 경험 (CX) 관리
               </p>
             </div>
           </div>
 
           <div>
-            <img className={styles.imagethree2} src="/logos/second.png" />{" "}
+            <img
+              className={styles.imagethree2}
+              src="/logos/second.png"
+              alt="second"
+            />
             <br />
             <div className={styles.indexs}>
               <div className={styles.titlesecond2}>
-                {" "}
-                02. Online User Behavior Analysis{" "}
-              </div>{" "}
+                02. Online User Behavior Analysis
+              </div>
               <br />
               <p className={styles.listfirst2}>
-                {" "}
                 디지털 마케팅의 효과 측정 및 분석 (Growth Hacking) <br />
                 온라인 학습 패턴 분석 (Learning analytics) <br />
                 온라인의 사용자 리뷰 및 VoC 분석
@@ -179,15 +185,16 @@ export default function Introduction() {
           </div>
 
           <div>
-            <img className={styles.imagethree3} src="/logos/last.jpg" /> <br />
+            <img
+              className={styles.imagethree3}
+              src="/logos/last.jpg"
+              alt="last"
+            />
+            <br />
             <div className={styles.indexs}>
-              <div className={styles.titlesecond3}>
-                {" "}
-                03. Interaction Design{" "}
-              </div>{" "}
+              <div className={styles.titlesecond3}>03. Interaction Design</div>
               <br />
               <p className={styles.listfirst3}>
-                {" "}
                 자율주행 차량의 사용자 인터페이스 설계 <br />
                 가상현실에서의 리빙랩 및 사용성 평가 <br />
                 인터랙티브 대시보드 설계 및 시각화
@@ -201,10 +208,10 @@ export default function Introduction() {
         <p className={styles.titlefirst}>PROJECTS </p>
 
         <div className={styles.titlefirst2}>
-
           <p className={styles.subtitle}>
             <b className={styles.indexheader}>On-going Projects</b>
           </p>
+
 
           <ul className={styles.lastlists}>
             {projects_first.map((project) => (
@@ -213,7 +220,6 @@ export default function Introduction() {
           </ul>
 
           <p className={styles.subtitle}>
-            
             <b className={styles.indexheader}>Finished Projects </b>
           </p>
           
