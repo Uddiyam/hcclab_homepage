@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Professor.module.css";
+import styles from "../../styles/Professor.module.css";
 
 export default function ProfessorList0({ context }) {
   return (
@@ -8,3 +8,4 @@ export default function ProfessorList0({ context }) {
     </li>
   );
 }
+  

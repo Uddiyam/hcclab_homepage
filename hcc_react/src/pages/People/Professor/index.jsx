@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../../../styles/Professor.module.css";
 import Header from "../../../components/Header";
-import ProfessorListMap from "../../../components/ProfessorListMap";
+import ProfessorListMap from "../../../components/ProfessorList/ProfessorListMap";
 
 export default function Professor() {
   var Research_Interests = [
