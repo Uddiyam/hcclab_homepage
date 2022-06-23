@@ -3,11 +3,11 @@ import ProfessorList0 from "./ProfessorList0.jsx";
 import ProfessorList1 from "./ProfessorList1.jsx";
 import ProfessorList2 from "./ProfessorList2.jsx";
 import ProfessorList3 from "./ProfessorList3.jsx";
-import styles from "../styles/Professor.module.css";
+import styles from "../../styles/Professor.module.css";
 
 export default function ProfessorListMap({ list, category }) {
   const [category_num] = useState(category); //유형 불러오기
-  
+
   return (
     <div>
       {category_num === 0 && (

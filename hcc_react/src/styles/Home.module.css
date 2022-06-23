@@ -126,6 +126,19 @@
   overflow-wrap: break-word;
 }
 
+a {
+  color: #3c78d8;
+  font-size: 0.95rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+b {
+  font-weight: 700;
+  color: black;
+  font-size: 0.95rem;
+  font-family: "Open Sans", sans-serif;
+}
+
 .row_view {
   width: 100%;
   display: flex;

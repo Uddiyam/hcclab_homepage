@@ -60,6 +60,13 @@
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1;
+  color: black;
+}
+
+.homeclick {
+  text-decoration: none;
+  align-items: center;
+  display: flex;
 }
 
 .headerRight {
@@ -147,8 +154,9 @@
   height: 8rem;
   border: 1px solid #c4c4c4;
   box-shadow: 0 0 10px rgb(0 0 0 / 55%);
-  transform: translate(-50%, 30%);
+  transform: translate(-50%, 20%);
   padding: 1.2rem;
+  background-color: white;
 }
 
 .headerTempMenu {
@@ -172,7 +180,6 @@
 .headerSearchIcon:hover {
   cursor: pointer;
 }
-
 
 .headerModal {
   position: absolute;

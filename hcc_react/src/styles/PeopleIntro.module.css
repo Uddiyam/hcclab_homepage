@@ -4,32 +4,33 @@
 }
 
 .PeopleImg{
-    width: 180px;
-    height: 280px;
+    width: 170px;
+    height: 225px;
     object-fit:contain;
 }
 
 .Name{
-    margin-top: -100px;
+    margin-top: -200px;
     display:inline;
     text-align: center;
     width: 100%;
     font-size: 17px;
-    padding: 0 15% 0 15%;
+    padding: 0 15% 0 20%;
 
 }
 
 .Intro{
     white-space: pre-wrap;
-    font-size: 15px;
+    font-size: 13px;
     display: flex;
     width: 100%;
-    padding: 0 13% 0 13%;
+    padding: 0 13% 0 30%;
+    padding-bottom: 20px;
 }
 
 .Wrapper{
     display:inline;
-    padding: 0 1% 0 1%;
+    padding: 0 1% 0 2%;
 }
 
 
