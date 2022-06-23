@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import Header from "../components/Header";
 import styles from "../styles/Introduction.module.css";
@@ -5,7 +6,7 @@ import styles from "../styles/Introduction.module.css";
 function ProjectMaker({ index, from }) {
   return (<>
       <li className={styles.indexs}>
-          {index} <b className={styles.introBold}>({from})</b>
+          {index} (<b className={styles.introBold}>{from}</b>) {from === "IITP, 정보통신기획평가원" ? <a href="https://www.kw.ac.kr/ko/life/newsletter.jsp?BoardMode=view&DUID=39366"> (<strong style={ {color:"#4A86E8"} }>홍보자료</strong>) </a> : <h3></h3>}
 
       </li>
         </>
@@ -140,6 +141,7 @@ export default function Introduction() {
           인공지능이 갖는 <b>도구로서의 잠재력</b>을 극대화하여{" "}
           <b>인간/사용자의 관점</b>에서 컴퓨팅시스템을 연구/개발합니다.
         </p>
+
         <p className={styles.titlefirst}>RESEARCH TOPICS </p>
 
         <div className={styles.container}>
@@ -214,11 +216,15 @@ export default function Introduction() {
 
 
           <ul className={styles.lastlists}>
-            {projects_first.map((project) => (
-              <ProjectMaker index={project.index} from={project.from} />
-            ))}
+            {projects_first.map((project) => ( <>
+              <ProjectMaker index={project.index} from={project.from}/>
+              {/* {idx === 0 ? <> <ProjectMaker index={project.index} from={project.from}/> <a href="https://www.kw.ac.kr/ko/life/newsletter.jsp?BoardMode=view&DUID=39366"> (<strong style={ {color:"blue"} }>홍보자료</strong>) </a> </>
+                : <ProjectMaker index={project.index} from={project.from}/>} */}
+              </>
+            ))
+            } 
           </ul>
-
+          
           <p className={styles.subtitle}>
             <b className={styles.indexheader}>Finished Projects </b>
           </p>
