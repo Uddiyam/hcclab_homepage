@@ -31,6 +31,11 @@
   margin-bottom: 3%;
 }
 
+.conceptfirst b {
+  font-size: 19px;
+  margin-bottom: 3%;
+}
+
 .titlefirst {
   background-color: #974f59;
   padding-left: 13%;
@@ -41,7 +46,6 @@
   color: white;
   margin-top: 2%;
   margin-bottom: 2%;
-  
 }
 
 .titlefirst2 {
@@ -49,7 +53,6 @@
   padding-left: 10rem;
   padding-right: 10rem;
   /* font-family: none; */
-
 }
 
 .imagethree {
@@ -104,21 +107,23 @@
 .listfirst2 {
   font-size: 14px;
   line-height: 25px;
+  font-family: sans-serif;
 }
 
 .listfirst3 {
   font-size: 14px;
   line-height: 25px;
+  font-family: sans-serif;
 }
 
 .subtitle {
   font-size: 20px;
   text-align: left;
-  margin-bottom: 1%;
+  margin-bottom: 1rem;
   padding-left: 2%;
-  text-align: left;
   color: #974f59;
   font-family: sans-serif;
+  font-family: none;
   font-weight: 900;
 }
 
@@ -144,14 +149,6 @@
   padding: 0;
 }
 
-
-
-.indexheader {
-  color: #974f59;
-  font-family: none;
-  margin-bottom: 0;
-}
-
 .indexs {
   margin-top: 0;
   font-family: none;
@@ -159,8 +156,17 @@
 
 @media screen and (max-width: 768px) {
   .container {
+    padding-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .topWord {
+    font-size: 45px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    line-height: 45px;
+    font-family: "Oswald", sans-serif;
   }
   .indexs {
     /* flex-wrap: wrap; */
@@ -180,8 +186,19 @@
     margin-bottom: 15%;
   }
 
+  .imgfirst {
+    width: 100%;
+    height: 10%;
+    margin-bottom: 10px;
+  }
+
   .titlefirst2 {
-    margin: 5%;
+    margin: 2rem;
     padding: 0px;
+  }
+  .paddingview {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
   }
 }

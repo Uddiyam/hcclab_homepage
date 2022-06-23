@@ -1,15 +1,21 @@
-/* eslint-disable */
 import React from "react";
 import Header from "../components/Header";
 import styles from "../styles/Introduction.module.css";
 
 function ProjectMaker({ index, from }) {
-  return (<>
-      <li className={styles.indexs}>
-          {index} (<b className={styles.introBold}>{from}</b>) {from === "IITP, 정보통신기획평가원" ? <a href="https://www.kw.ac.kr/ko/life/newsletter.jsp?BoardMode=view&DUID=39366"> (<strong style={ {color:"#4A86E8"} }>홍보자료</strong>) </a> : <h3></h3>}
-
-      </li>
-        </>
+  return (
+    <li className={styles.indexs}>
+      {index} (<b className={styles.introBold}>{from}</b>){" "}
+      {from === "IITP, 정보통신기획평가원" ? (
+        <a href="https://www.kw.ac.kr/ko/life/newsletter.jsp?BoardMode=view&DUID=39366">
+          {" "}
+          (<strong style={{ color: "#4A86E8" }}>홍보자료</strong>){" "}
+        </a>
+      ) : (
+        // eslint-disable-next-line jsx-a11y/heading-has-content
+        <h3 />
+      )}
+    </li>
   );
 }
 
@@ -46,9 +52,9 @@ const projects_first = [
 
 function ProjectMaker2({ index, from }) {
   return (
-      <li className={styles.indexs}>
-        {index} (<b className={styles.introBold}>{from}</b>)
-      </li>
+    <li className={styles.indexs}>
+      {index} (<b className={styles.introBold}>{from}</b>)
+    </li>
   );
 }
 
@@ -129,24 +135,24 @@ export default function Introduction() {
   return (
     <>
       <Header url={1} />
-
       <div className={styles.center}>
-        <div className={styles.topWord}>WHERE TECHNOLOGY MEETS HUMANITY</div>
+        <div className={styles.paddingview}>
+          <div className={styles.topWord}>WHERE TECHNOLOGY MEETS HUMANITY</div>
 
-        <div>
-          <img className={styles.imgfirst} src="/logos/process2.png" />
+          <img
+            className={styles.imgfirst}
+            src="/logos/process2.png"
+            alt="프로세스"
+          />
+          <p className={styles.conceptfirst}>
+            인공지능이 갖는 <b>도구로서의 잠재력</b>을 극대화하여{" "}
+            <b>인간/사용자의 관점</b>에서 컴퓨팅시스템을 연구/개발합니다.
+          </p>
         </div>
-
-        <p className={styles.conceptfirst}>
-          인공지능이 갖는 <b>도구로서의 잠재력</b>을 극대화하여{" "}
-          <b>인간/사용자의 관점</b>에서 컴퓨팅시스템을 연구/개발합니다.
-        </p>
 
         <p className={styles.titlefirst}>RESEARCH TOPICS </p>
 
         <div className={styles.container}>
-          <div></div>
-
           <div className={styles.widthsize}>
             <img
               className={styles.imagethree}
@@ -210,31 +216,28 @@ export default function Introduction() {
         <p className={styles.titlefirst}>PROJECTS </p>
 
         <div className={styles.titlefirst2}>
-          <p className={styles.subtitle}>
-            <b className={styles.indexheader}>On-going Projects</b>
-          </p>
-
-
-          <ul className={styles.lastlists}>
-            {projects_first.map((project) => ( <>
-              <ProjectMaker index={project.index} from={project.from}/>
-              {/* {idx === 0 ? <> <ProjectMaker index={project.index} from={project.from}/> <a href="https://www.kw.ac.kr/ko/life/newsletter.jsp?BoardMode=view&DUID=39366"> (<strong style={ {color:"blue"} }>홍보자료</strong>) </a> </>
-                : <ProjectMaker index={project.index} from={project.from}/>} */}
-              </>
-            ))
-            } 
-          </ul>
           
-          <p className={styles.subtitle}>
-            <b className={styles.indexheader}>Finished Projects </b>
-          </p>
-          
+          <div className={styles.subtitle}>On-going Projects</div>
           <ul className={styles.lastlists}>
-            {projects_sec.map((project) => (
-              <ProjectMaker2 index={project.index} from={project.from} />
+            {projects_first.map((project, index) => (
+              <ProjectMaker
+                index={project.index}
+                from={project.from}
+                key={index}
+              />
             ))}
           </ul>
 
+          <div className={styles.subtitle}>Finished Projects</div>
+          <ul className={styles.lastlists}>
+            {projects_sec.map((project, index) => (
+              <ProjectMaker2
+                index={project.index}
+                from={project.from}
+                key={index}
+              />
+            ))}
+          </ul>
         </div>
       </div>
     </>
