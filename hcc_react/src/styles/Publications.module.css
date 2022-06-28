@@ -4,19 +4,21 @@
 }
 
 .publicationsTitle {
-  min-width: 46rem;
+  width: 42rem;
   font-size: 4rem;
   border-bottom: 0.8rem solid rgba(151, 79, 89, 1);
   text-align: center;
-  margin: 0 auto;
+  margin: 0 calc((100% - 42rem) / 2);
   margin-bottom: 5.5rem;
   padding-top: 5.5rem;
 }
 
 @media screen and (max-width: 767px) {
   .publicationsTitle {
-    min-width: 28rem;
-    font-size: 3.4rem;
+    width: calc((100% - 16vw));
+    font-size: 2.8rem;
+    margin: 0 calc((100% - 84vw) / 2);
+    margin-bottom: 5.5rem;
     padding-top: 5rem;
   }
 }

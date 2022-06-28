@@ -218,7 +218,7 @@
 
 @keyframes slideIn {
   from {
-    left: -40vw;
+    left: -50vw;
   }
   to {
     left: 0;
@@ -230,7 +230,7 @@
     left: 0;
   }
   to {
-    left: -40vw;
+    left: -50vw;
   }
 }
 
@@ -293,8 +293,8 @@
   .headerLinkList {
     position: absolute;
     top: 0;
-    left: -40vw;
-    width: 40vw;
+    left: -50vw;
+    width: 50vw;
     height: 100vh;
     padding: 5rem 2.6rem;
     flex-direction: column;

@@ -1,5 +1,5 @@
 .lecturesTitle {
-  max-width: 46rem;
+  width: 46rem;
   font-size: 4rem;
   border-bottom: 0.8rem solid rgba(151, 79, 89, 1);
   text-align: center;
@@ -54,17 +54,19 @@
 
 @media screen and (max-width: 767px) {
   .lecturesTitle {
-    max-width: 28rem;
-    font-size: 3.4rem;
+    width: calc((100% - 2rem));
+    font-size: 3.5rem;
+    margin: 0 calc(((100% - (100% - 2rem)) / 2));
+    margin-bottom: 5.5rem;
     padding-top: 5rem;
   }
 
   .lecturesListTitle {
     font-size: 1.6rem;
-    padding: 2.4rem 5rem;
+    padding: 2.4rem 2rem;
   }
 
   .lecturesListContent {
-    padding: 2rem 5rem;
+    padding: 2rem 2rem;
   }
 }

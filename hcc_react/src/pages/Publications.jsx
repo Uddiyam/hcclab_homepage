@@ -10,6 +10,7 @@ export default function Publications() {
       items: [
         {
           writers: ["Shin, K.", "Park, K.*"],
+          year: "2022",
           subject:
             "“Development and Testing of an IoT Application to Support Infant Feeding: A Design Thinking Approach“",
           type: "In preparation",
