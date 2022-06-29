@@ -60,7 +60,7 @@ export default function ProfessorListMap({ list, category }) {
       {category_num === 4 && (
         <ul className={styles.square}>
           {list.map((t, i) => (
-            <div>
+            <div key={i}>
               <li className={styles.text_style_li}>{t.type.title}</li>
               <div style={{ marginLeft: "2rem" }}>
                 {t.list.map((listitem, j) => {
