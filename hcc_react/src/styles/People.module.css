@@ -23,7 +23,6 @@
 
 .PeopleImg {
   width: 23%;
-  height: 240px;
   object-fit: contain;
   padding-left: 10%;
   margin-right: 4%;
@@ -35,7 +34,7 @@
   margin-top: 40px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
   .Container {
     justify-content: center;
   }
@@ -44,7 +43,23 @@
     margin-top: 0;
     float: right;
   }
-  
+
+.Background {
+  background-color: rgba(243, 243, 243, 1);
+  background-repeat: repeat-x;
+  padding: 0 5% 0 3%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.PeopleImg {
+  width: 40%;
+  object-fit: contain;
+  padding-left: 10%;
+  margin-right: 4%;
+  display: inline-block;
+}
+
 }
 
 .Info > h2 {
@@ -85,7 +100,7 @@
 }
 
 .Lists {
-  padding: 3% 10% 3% 11%;
+  padding: 1% 10% 6% 1%;
   list-style: square;
   font-size: 13px;
   line-height: 270%;
