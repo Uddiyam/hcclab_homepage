@@ -38,28 +38,31 @@
   .Container {
     justify-content: center;
   }
-
+  .MemberTitle {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+  }
   .Info {
     margin-top: 0;
     float: right;
   }
 
-.Background {
-  background-color: rgba(243, 243, 243, 1);
-  background-repeat: repeat-x;
-  padding: 0 5% 0 3%;
-  display: flex;
-  flex-wrap: nowrap;
-}
+  .Background {
+    background-color: rgba(243, 243, 243, 1);
+    background-repeat: repeat-x;
+    padding: 0 5% 0 3%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
-.PeopleImg {
-  width: 40%;
-  object-fit: contain;
-  padding-left: 10%;
-  margin-right: 4%;
-  display: inline-block;
-}
-
+  .PeopleImg {
+    width: 40%;
+    object-fit: contain;
+    padding-left: 10%;
+    margin-right: 4%;
+    display: inline-block;
+  }
 }
 
 .Info > h2 {

@@ -7,7 +7,7 @@ export default function Activities({ activities }) {
     <div className={styles.Background}>
       {activities.map((type, i) => {
         return (
-          <>
+          <span key={i}>
             <div className={styles.Wrap}>
               <ul className={styles.TypeName}>
                 <li>
@@ -18,7 +18,7 @@ export default function Activities({ activities }) {
             <div className={styles.Wrap}>
               {type.lists.map((listItem, i2) => {
                 return (
-                  <ul className={styles.Lists}>
+                  <ul className={styles.Lists} key={i2}>
                     <li>
                       {`${listItem.info1} `}
                       <b>{listItem.bold1}</b>
@@ -33,7 +33,7 @@ export default function Activities({ activities }) {
                 );
               })}
             </div>
-          </>
+          </span>
         );
       })}
     </div>
