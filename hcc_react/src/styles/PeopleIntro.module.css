@@ -34,9 +34,9 @@
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 763px){
     .PeopleImg{
-        width: 100px;
+        width: 120px;
         height: 100px;
         object-fit:contain;
     }

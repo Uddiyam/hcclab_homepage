@@ -235,7 +235,7 @@ export default function People() {
         <h3>ALUMNI</h3>
       </div>
       <div className={styles.Background}>
-        <ul className={styles.Lists}>
+        <ul className={styles.Lists_2}>
           <li>(학부연구생) 정범영, 2021.01 ~ 2021.12</li>
           <li>(학부연구생) 김채현, 2021.07 ~ 2022.02</li>
         </ul>

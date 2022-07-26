@@ -34,36 +34,6 @@
   margin-top: 40px;
 }
 
-@media screen and (max-width: 760px) {
-  .Container {
-    justify-content: center;
-  }
-  .MemberTitle {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 50px;
-  }
-  .Info {
-    margin-top: 0;
-    float: right;
-  }
-
-  .Background {
-    background-color: rgba(243, 243, 243, 1);
-    background-repeat: repeat-x;
-    padding: 0 5% 0 3%;
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .PeopleImg {
-    width: 40%;
-    object-fit: contain;
-    padding-left: 10%;
-    margin-right: 4%;
-    display: inline-block;
-  }
-}
 
 .Info > h2 {
   color: rgba(151, 79, 89, 1);
@@ -103,8 +73,64 @@
 }
 
 .Lists {
-  padding: 1% 10% 6% 1%;
+  padding: 1% 0% 6% 1%;
   list-style: square;
   font-size: 13px;
   line-height: 270%;
+  width: 100%;
+}
+
+.Lists_2 {
+  padding: 1% 1% 1% 11%;
+  list-style: square;
+  font-size: 13px;
+  line-height: 270%;
+  width: 100%;
+}
+
+@media screen and (max-width: 763px) {
+  .Container {
+    justify-content: center;
+  }
+  .MemberTitle {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+  }
+  .Info {
+    margin-top: 0;
+    padding-top: 5%;
+    float: right;
+  }
+
+  .Background {
+    background-color: rgba(243, 243, 243, 1);
+    background-repeat: repeat-x;
+    padding: 0 5% 0 3%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .PeopleImg {
+    width: 40%;
+    object-fit: contain;
+    padding-left: 10%;
+    margin-right: 4%;
+    display: inline-block;
+  }
+  .Lists {
+    padding: 1% 0% 6% 1%;
+    list-style: square;
+    font-size: 13px;
+    line-height: 270%;
+    width: 100%;
+  }
+
+  .Lists_2 {
+    padding: 1% 1% 1% 11%;
+    list-style: square;
+    font-size: 13px;
+    line-height: 270%;
+    width: 100%;
+  }
 }

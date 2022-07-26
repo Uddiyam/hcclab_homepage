@@ -22,8 +22,22 @@
     list-style: square;
     font-size: 13px;
     line-height: 270%;
-    padding-left: 1%;
 }
 .Wrap{
     width: 100%;
+}
+@media screen and (max-width: 763px) {
+    .TypeName{
+        list-style:square;
+        font-size: 15px;
+        line-height: 120%;
+        margin-bottom: 0;
+    }
+    .Lists{
+        list-style: square;
+        font-size: 12px;
+        line-height: 270%;
+        padding-left: 2%;
+    }
+
 }
