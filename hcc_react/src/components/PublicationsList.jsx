@@ -28,7 +28,7 @@ export default function PublicationsList({ pd, order }) {
       setWritersArr([...tempArr]);
     };
     boldProfessorName();
-  }, []);
+  }, []); // 처음 렌더링 될 때 한번만 실행
 
   return (
     <div
