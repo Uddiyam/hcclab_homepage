@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/hcclab_homepage/static/css/main.2c5069bb.css",
-    "main.js": "/hcclab_homepage/static/js/main.f5c49c41.js",
+    "main.js": "/hcclab_homepage/static/js/main.0c5df4bd.js",
     "index.html": "/hcclab_homepage/index.html",
     "static/media/hamburger.svg": "/hcclab_homepage/static/media/hamburger.1365a929fd51d0662e5e4d1a73eada5c.svg",
     "static/media/dropdown.svg": "/hcclab_homepage/static/media/dropdown.5f2c6404cfc0e60640d314600b05e66f.svg",
     "static/media/cross.svg": "/hcclab_homepage/static/media/cross.b27b87f245878914cda5e22cc13cfc51.svg",
     "main.2c5069bb.css.map": "/hcclab_homepage/static/css/main.2c5069bb.css.map",
-    "main.f5c49c41.js.map": "/hcclab_homepage/static/js/main.f5c49c41.js.map"
+    "main.0c5df4bd.js.map": "/hcclab_homepage/static/js/main.0c5df4bd.js.map"
   },
   "entrypoints": [
     "static/css/main.2c5069bb.css",
-    "static/js/main.f5c49c41.js"
+    "static/js/main.0c5df4bd.js"
   ]
 }
